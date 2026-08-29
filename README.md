@@ -28,6 +28,8 @@ These are conditional results on dual-clean-correct sources. They do not establi
 - [`reports/next_stage/NEXT_STAGE_EXECUTION_STATUS_2026-08-29.md`](reports/next_stage/NEXT_STAGE_EXECUTION_STATUS_2026-08-29.md)
 - [`reports/next_stage/p6_query_gate_report.md`](reports/next_stage/p6_query_gate_report.md)
 - [`reports/next_stage/P6_DIAGNOSTIC_REPORT_2026-08-29.md`](reports/next_stage/P6_DIAGNOSTIC_REPORT_2026-08-29.md)
+- [`reports/next_stage/P7_THREE_HEAD_PPO_SPEC_DRAFT_2026-08-29.md`](reports/next_stage/P7_THREE_HEAD_PPO_SPEC_DRAFT_2026-08-29.md)
+- [`reports/next_stage/P7_PPO_EXPERT_REVIEW_CHECKLIST_2026-08-29.md`](reports/next_stage/P7_PPO_EXPERT_REVIEW_CHECKLIST_2026-08-29.md)
 - [`reports/next_stage/NEXT_STAGE_IMPLEMENTATION_PLAN.md`](reports/next_stage/NEXT_STAGE_IMPLEMENTATION_PLAN.md)
 
 ## Verification
@@ -39,4 +41,3 @@ python -m unittest discover -s tests -v
 ```
 
 The WiFi-B/ManyTx source datasets, local caches, paper PDFs, and model checkpoints are intentionally not stored in Git. Paths and checkpoint hashes needed for experiment auditing remain recorded in the reports.
-

@@ -1,0 +1,173 @@
+{
+  "schema_version": "wifib-three-head-ppo-spec-draft-v1",
+  "status": "DRAFT_REQUIRES_EXPERT_APPROVAL",
+  "implementation_authorized": false,
+  "training_authorized": false,
+  "final_test_used": false,
+  "evidence": {
+    "p6_report": "reports/next_stage/p6_query_gate_report.json",
+    "gate_q1": {
+      "method": "greedy_coordinate",
+      "query_budget": 256,
+      "difference_percentage_points": 8.25242718446602,
+      "paired_bootstrap_95ci_percentage_points": [5.8252427184466, 10.9223300970874]
+    },
+    "gate_q2": {
+      "method": "greedy_coordinate",
+      "searcher_query_budget": 128,
+      "searcher_rate": 0.08980582524271845,
+      "random_query_budget": 256,
+      "random_rate": 0.06553398058252427
+    }
+  },
+  "frozen_assets": {
+    "codec_checkpoint": "runs/stage_g1/frozen/wifib_v1/vqvae_p1_k1024.pt",
+    "infill_checkpoint": "runs/next_stage/p3_infill_hybrid_v2/best.pt",
+    "candidate_graph": "artifacts/token_graph/wifib_vq_p1_k1024_neighbors.npz",
+    "victim_checkpoint": "runs/stage_g0/frozen/wifib_v1/victim_a.pt",
+    "evaluator_b_online_access": false
+  },
+  "data": {
+    "train_role_proposed": "generator_train",
+    "development_role": "generator_search_dev",
+    "historical_policy_gate_role": "policy_gate_P5b_P6_only",
+    "ppo_confirmatory_holdout_role": null,
+    "ppo_confirmatory_holdout_requires_expert_decision": true,
+    "final_test_role": "sealed"
+  },
+  "candidate_space": {
+    "codebook_size": 1024,
+    "sequence_length": 2048,
+    "maximum_preranked_positions": 64,
+    "candidate_graph_top_k": 16,
+    "maximum_replacements_per_position": 4,
+    "delta_ll": 4.0,
+    "transition_supported": true,
+    "candidate_context_mode": "reference_frozen_v1",
+    "one_edit_per_position": true,
+    "maximum_edits": 8
+  },
+  "actor": {
+    "hierarchy": ["stop", "position", "replacement"],
+    "joint_log_probability_required": true,
+    "heads": {
+      "stop": {
+        "distribution": "bernoulli",
+        "reference_kl": false,
+        "forced_on_success_or_budget_or_empty_mask": true
+      },
+      "position": {
+        "distribution": "masked_categorical",
+        "reference_prior": "softmax(z(infill_entropy)+z(token_surprisal)+z(log1p_candidate_count)+0.25*z(candidate_spread)+0.25*z(decoder_sensitivity))",
+        "residual_zero_initialization": true,
+        "reference_kl": false,
+        "new_prior_weights_require_expert_approval": true
+      },
+      "replacement": {
+        "distribution": "masked_categorical",
+        "reference_prior": "softmax((infill_logits+transition_prior_score) restricted to plausible candidates)",
+        "residual_zero_initialization": true,
+        "reference_kl": true,
+        "only_head_with_reference_kl": true
+      }
+    }
+  },
+  "critic": {
+    "type": "scalar_value_head",
+    "is_actor_action_head": false
+  },
+  "observation": {
+    "include": [
+      "reference_and_current_token_summary",
+      "edit_mask_and_action_history",
+      "candidate_table_features",
+      "victim_logits_summary_and_true_class_margin",
+      "rf_validity_summary",
+      "remaining_edit_and_query_budget",
+      "step_index",
+      "known_device_label"
+    ],
+    "exclude": [
+      "victim_gradients",
+      "victim_parameters",
+      "victim_intermediate_embeddings",
+      "evaluator_b_or_c_outputs",
+      "final_test_information"
+    ]
+  },
+  "projection": {
+    "sample_rate_hz": 35000000.0,
+    "occupied_bandwidth_hz": 22000000.0,
+    "min_snr_db": 22.0,
+    "max_normalized_peak_delta": 1.0,
+    "match_reference_power": true,
+    "bandlimit_perturbation": true
+  },
+  "query_accounting": {
+    "clean_baseline_query_excluded_from_candidate_budget": true,
+    "one_unique_projected_state_equals_one_victim_query": true,
+    "stop_query_cost": 0,
+    "maximum_online_edit_queries": 8,
+    "report_raw_requests_unique_calls_and_cache_hits": true,
+    "report_total_training_queries": true,
+    "evaluator_audit_queries_reported_separately": true
+  },
+  "reward_proposed": {
+    "hardness": "clip((H_t-H_previous)/robust_dev_scale,-5,5)",
+    "H_definition": "max_non_true_logit-minus-true_logit",
+    "success_definition": "victim_misclassified_and_rf_valid_and_within_budgets",
+    "uses_evaluator_b_or_c": false,
+    "coefficients": {
+      "hardness_delta": 1.0,
+      "query_cost": 0.01,
+      "edit_cost": 0.005,
+      "rf_violation": 1.0,
+      "replacement_kl": 0.02,
+      "success_bonus": 1.0
+    },
+    "coefficients_require_expert_approval": true
+  },
+  "ppo_proposed": {
+    "clip_ratio": 0.2,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "learning_rate": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "target_approx_kl": 0.02,
+    "entropy_coefficients": {
+      "stop": 0.001,
+      "position": 0.01,
+      "replacement": 0.005
+    },
+    "all_values_require_expert_approval": true
+  },
+  "evaluation": {
+    "baselines": [
+      "query_matched_random_plausible",
+      "p6_greedy_coordinate",
+      "beam_coordinate_diagnostic"
+    ],
+    "primary_metric": "conditional_valid_hard_rate_on_dual_clean_correct_sources",
+    "paired_bootstrap_iterations": 5000,
+    "identity_auditor_role": "offline_after_checkpoint_freeze_only",
+    "minimum_identity_pooled": 0.98,
+    "minimum_identity_macro": 0.98,
+    "minimum_identity_device": 0.90,
+    "minimum_rf_valid_fraction": 0.95,
+    "proposed_gate": {
+      "effect_superiority_percentage_points": 5.0,
+      "effect_ci_lower_must_exceed_zero": true,
+      "query_efficiency_noninferiority_margin_percentage_points": -2.0,
+      "maximum_query_fraction_of_best_non_rl": 0.25,
+      "requires_expert_approval": true
+    }
+  },
+  "prohibited_actions": [
+    "implement_or_train_before_expert_approval",
+    "use_policy_gate_for_ppo_tuning_or_checkpoint_selection",
+    "use_evaluator_b_or_c_in_online_loop",
+    "access_final_test_before_full_freeze",
+    "claim_physical_or_over_the_air_realizability"
+  ]
+}
+
