@@ -1,0 +1,26 @@
+{
+  "status": "smoke_complete",
+  "run_mode": "cpu_hybrid_transition_pilot",
+  "seconds": 137.0472617149353,
+  "device": "cpu",
+  "parameters": 829440,
+  "train_examples": 2048,
+  "validation_examples": 512,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.509113527351117,
+      "train_masked_targets": 4594,
+      "validation": {
+        "loss": 3.5125399031216586,
+        "masked_targets": 1185,
+        "top1_accuracy": 0.1881856540084388,
+        "top5_accuracy": 0.5350210970464135
+      }
+    }
+  ],
+  "best_validation_loss": 3.5125399031216586,
+  "classifier_feedback": false,
+  "policy_gate_attack_feedback": false,
+  "final_test_used": false
+}

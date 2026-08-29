@@ -1,0 +1,36 @@
+{
+  "schema_version": "wifib-p5b-formal-v1",
+  "seeds": [20260911, 20260912, 20260913],
+  "source_pool": "reports/next_stage/source_pool.csv",
+  "source_condition": "dual-clean-correct untouched buffer; 25/device due Device 11 limitation",
+  "edit_counts": [2, 4, 8, 16],
+  "query_budgets": [64, 128, 256],
+  "candidates_per_position": 4,
+  "candidate_top_k": 16,
+  "transition_supported": true,
+  "delta_ll": 4.0,
+  "position_preranking": {
+    "surprisal_weight": 1.0,
+    "candidate_spread_weight": 0.25,
+    "decoder_sensitivity_weight": 0.25,
+    "uses_victim": false
+  },
+  "local_precheck": {
+    "max_normalized_peak_delta": 0.75,
+    "max_normalized_jump_increase": 1.0
+  },
+  "projection": {
+    "sample_rate_hz": 35000000.0,
+    "occupied_bandwidth_hz": 22000000.0,
+    "min_snr_db": 22.0,
+    "max_normalized_peak_delta": 1.0,
+    "match_reference_power": true,
+    "bandlimit_perturbation": true
+  },
+  "methods": ["random_nearest", "random_infill", "greedy_infill"],
+  "bootstrap_iterations": 5000,
+  "victim_access": "score-based logits/margin only",
+  "evaluator_b_access": "offline final audit only",
+  "policy_gate_used_for_method_or_threshold_selection": false,
+  "final_test_used": false
+}

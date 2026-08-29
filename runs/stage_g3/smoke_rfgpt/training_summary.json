@@ -1,0 +1,7 @@
+{
+  "best_epoch": 2,
+  "best_validation_loss": 6.561979115009308,
+  "best_validation_perplexity": 707.6708716162077,
+  "completed_epochs": 2,
+  "status": "complete"
+}

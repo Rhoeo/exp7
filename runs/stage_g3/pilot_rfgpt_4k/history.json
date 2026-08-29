@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "learning_rate": 0.0002713525491562421,
+    "train": {
+      "loss": 5.194150901399553,
+      "perplexity": 180.21505746086535,
+      "token_accuracy": 0.07729721069335938,
+      "tokens": 1048576,
+      "seconds": 129.49107384681702
+    },
+    "validation": {
+      "loss": 3.8272785414010286,
+      "perplexity": 45.93735136615047,
+      "token_accuracy": 0.12140655517578125,
+      "tokens": 262144,
+      "seconds": 7.581910848617554
+    }
+  },
+  {
+    "epoch": 2,
+    "learning_rate": 0.0001963525491562421,
+    "train": {
+      "loss": 3.49662612285465,
+      "perplexity": 33.00391275775601,
+      "token_accuracy": 0.1434030532836914,
+      "tokens": 1048576,
+      "seconds": 131.47982144355774
+    },
+    "validation": {
+      "loss": 2.998233262449503,
+      "perplexity": 20.050082379542577,
+      "token_accuracy": 0.19228363037109375,
+      "tokens": 262144,
+      "seconds": 7.3903419971466064
+    }
+  },
+  {
+    "epoch": 3,
+    "learning_rate": 0.00010364745084375788,
+    "train": {
+      "loss": 2.97787602012977,
+      "perplexity": 19.64604449582574,
+      "token_accuracy": 0.19307994842529297,
+      "tokens": 1048576,
+      "seconds": 131.75870656967163
+    },
+    "validation": {
+      "loss": 2.6257963571697474,
+      "perplexity": 13.81557193618284,
+      "token_accuracy": 0.24094772338867188,
+      "tokens": 262144,
+      "seconds": 7.4475226402282715
+    }
+  },
+  {
+    "epoch": 4,
+    "learning_rate": 2.8647450843757894e-05,
+    "train": {
+      "loss": 2.7360021923668683,
+      "perplexity": 15.425194704454636,
+      "token_accuracy": 0.22279834747314453,
+      "tokens": 1048576,
+      "seconds": 132.35062193870544
+    },
+    "validation": {
+      "loss": 2.4463672321289778,
+      "perplexity": 11.54632531879325,
+      "token_accuracy": 0.2703285217285156,
+      "tokens": 262144,
+      "seconds": 8.119764566421509
+    }
+  },
+  {
+    "epoch": 5,
+    "learning_rate": 0.0,
+    "train": {
+      "loss": 2.6217010160908103,
+      "perplexity": 13.759108155041439,
+      "token_accuracy": 0.2389669418334961,
+      "tokens": 1048576,
+      "seconds": 133.3038101196289
+    },
+    "validation": {
+      "loss": 2.3822558280080557,
+      "perplexity": 10.8293043788987,
+      "token_accuracy": 0.2827606201171875,
+      "tokens": 262144,
+      "seconds": 7.457534074783325
+    }
+  }
+]

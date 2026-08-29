@@ -1,0 +1,90 @@
+{
+  "checkpoint": "E:\\exp7\\runs\\stage_g1\\pilot_vqvae_p1_k1024\\best.pt",
+  "checkpoint_epoch": 2,
+  "classification": {
+    "evaluator_b": {
+      "accuracy_drop_percentage_points": 0.0,
+      "clean_accuracy": 0.9973076060130133,
+      "clean_correct_examples": 8890,
+      "clean_correct_identity_retention": 0.9996625421822273,
+      "matched_noise_accuracy": 0.9976441552613866,
+      "matched_noise_clean_correct_identity_retention": 0.9997750281214848,
+      "matched_noise_prediction_agreement": 0.9992147184204622,
+      "prediction_agreement": 0.9993269015032533,
+      "reconstructed_accuracy": 0.9973076060130133
+    },
+    "victim_a": {
+      "accuracy_drop_percentage_points": 1.626654700471175,
+      "clean_accuracy": 0.90542966120709,
+      "clean_correct_examples": 8071,
+      "clean_correct_identity_retention": 0.9689010035931112,
+      "matched_noise_accuracy": 0.8954453668386807,
+      "matched_noise_clean_correct_identity_retention": 0.975343823565853,
+      "matched_noise_prediction_agreement": 0.9620821180166031,
+      "prediction_agreement": 0.9557998653803007,
+      "reconstructed_accuracy": 0.8891631142023783
+    }
+  },
+  "classifier_metadata": {
+    "evaluator_b": {
+      "architecture": "evaluator_b",
+      "checkpoint": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\evaluator_b.pt",
+      "checkpoint_epoch": 8,
+      "frozen": true
+    },
+    "victim_a": {
+      "architecture": "victim_a",
+      "checkpoint": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\victim_a.pt",
+      "checkpoint_epoch": 12,
+      "frozen": true
+    }
+  },
+  "codebook": {
+    "active_code_ratio": 1.0,
+    "active_codes": 1024,
+    "codebook_size": 1024,
+    "maximum_code_fraction": 0.002577965147793293,
+    "perplexity": 981.6609497070312
+  },
+  "dataset": "wifib",
+  "device": "cuda",
+  "identity_gate": {
+    "checks": {
+      "evaluator_accuracy_drop": true,
+      "finite_output": true,
+      "reconstruction_snr": true,
+      "victim_accuracy_drop": true
+    },
+    "passed": true,
+    "thresholds": {
+      "max_evaluator_drop_percentage_points": 5.0,
+      "max_victim_drop_percentage_points": 10.0,
+      "min_reconstruction_snr_db": 10.0
+    }
+  },
+  "model_config": {
+    "architecture": "polyphase",
+    "base_width": 16,
+    "codebook_size": 1024,
+    "commitment_beta": 0.25,
+    "decoder_type": "subpixel",
+    "latent_dim": 2,
+    "mode": "vqvae",
+    "patch_size": 1
+  },
+  "reconstruction": {
+    "examples": 8914,
+    "finite_fraction": 1.0,
+    "mean_nmse": 0.0009197331703250648,
+    "mean_spectral_log_l1": 0.012672720547194621,
+    "mean_waveform_correlation": 0.999540347702064,
+    "output_complex_power_mean": 0.99973191218925,
+    "output_complex_power_std": 0.001408469763273524,
+    "peak_absolute": 1.3075677156448364,
+    "reconstruction_snr_db": 30.363381503322017,
+    "seconds": 91.61964917182922
+  },
+  "split": "reward_validation",
+  "status": "complete",
+  "training_used_classifier_feedback": false
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "rffi-next-stage-report-v1",
+  "stage": "P2_candidate_prior_graph",
+  "git_commit": null,
+  "config_hash": "0a85b6728b40d34825aa64cf7d80f529d10752625a89794fde56c9e40c179933",
+  "data_split_hash": "91f138f0e6a69a16030b5f9c937b0ec3514e2d1102dbd804bca738397ed51698",
+  "checkpoint_hash": "331ff5136efd8ed45ef444b348e7bb51b0b77a8e1da5523a4fbeb40ae0e3607e",
+  "seeds": [],
+  "source_count": 31486,
+  "victim_query_budget": 0,
+  "edit_budget": 0,
+  "metrics": {
+    "schema_version": "wifib-token-graph-diagnostics-v1",
+    "graph": "E:\\exp7\\artifacts\\token_graph\\wifib_vq_p1_k1024_neighbors.npz",
+    "graph_sha256": "591697cf7bfbdbf2cb3e54726b43fb4dd9adaec03c5f9976f47b1981170dcfcb",
+    "metadata": {
+      "schema_version": "wifib-token-candidate-prior-v2",
+      "graph_role": "static coarse prior only",
+      "codebook_size": 1024,
+      "latent_dim": 2,
+      "top_k": 32,
+      "top_k_subsets": [
+        16,
+        32
+      ],
+      "checkpoint": "E:\\exp7\\runs\\stage_g1\\frozen\\wifib_v1\\vqvae_p1_k1024.pt",
+      "checkpoint_sha256": "331ff5136efd8ed45ef444b348e7bb51b0b77a8e1da5523a4fbeb40ae0e3607e",
+      "token_cache": "E:\\data_cache\\rffi_v1\\tokens\\wifib_vq_p1_k1024\\tokens.npy",
+      "token_cache_sha256": "adc8a158c1fdd5629f9a155079a62b3b07813a8f520a29a7c1a0ed66865c3826",
+      "source_split_for_usage_and_transitions": "generator_train",
+      "source_records": 31486,
+      "final_test_used_for_graph_statistics": false,
+      "decoder_context_note": "Current frozen patch=1 polyphase decoder is pointwise, but this graph is deliberately not treated as waveform-validity proof.",
+      "runtime_required_filters": [
+        "masked-infill relative probability",
+        "actual decoded waveform RF precheck"
+      ]
+    },
+    "shape": [
+      1024,
+      32
+    ],
+    "active_codes": 1024,
+    "usage_perplexity": 980.8209097586829,
+    "usage_count_distribution": {
+      "min": 18821.0,
+      "p25": 49356.25,
+      "median": 60548.0,
+      "p75": 74330.75,
+      "p95": 96503.09999999999,
+      "max": 166184.0
+    },
+    "latent_distance_top16": {
+      "min": 0.033587876707315445,
+      "p25": 0.08410423807799816,
+      "median": 0.11438996344804764,
+      "p75": 0.14962585270404816,
+      "p95": 0.19368432462215424,
+      "max": 0.25493109226226807
+    },
+    "latent_distance_top32": {
+      "min": 0.033587876707315445,
+      "p25": 0.11366558074951172,
+      "median": 0.16290315240621567,
+      "p75": 0.21047285199165344,
+      "p95": 0.2700057327747345,
+      "max": 0.34848552942276
+    },
+    "mutual_fraction_top16": 0.9989013671875,
+    "mutual_fraction_top32": 0.87969970703125,
+    "transition_supported_fraction_top16": 0.7410888671875,
+    "transition_supported_fraction_top32": 0.64739990234375,
+    "components_top16": [
+      1024
+    ],
+    "components_top32": [
+      1024
+    ],
+    "self_edges": 0,
+    "candidate_prior_only": true,
+    "waveform_validity_proven": false
+  },
+  "gate": {
+    "status": "PASS",
+    "reason": "Candidate prior is complete, deterministic, active, connected, and self-edge free."
+  },
+  "artifacts": {
+    "graph": "E:\\exp7\\artifacts\\token_graph\\wifib_vq_p1_k1024_neighbors.npz",
+    "diagnostics_json": "E:\\exp7\\reports\\next_stage\\token_graph_diagnostics.json",
+    "diagnostics_markdown": "E:\\exp7\\reports\\next_stage\\token_graph_diagnostics.md"
+  },
+  "next_allowed_stage": "P3_masked_infill",
+  "prohibited_actions": [
+    "treat static graph membership as waveform validity",
+    "fall back to unrestricted codebook replacement",
+    "access policy_gate attack outcomes",
+    "access final_test signal data",
+    "train PPO"
+  ]
+}

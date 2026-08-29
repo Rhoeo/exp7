@@ -1,0 +1,7 @@
+{
+  "best_epoch": 12,
+  "best_validation_accuracy": 0.90542966120709,
+  "completed_epochs": 12,
+  "early_stopped": false,
+  "status": "complete"
+}

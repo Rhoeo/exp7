@@ -1,0 +1,35 @@
+{
+  "schema_version": "wifib-infill-gate-v1",
+  "seed": 20260903,
+  "source_role": "generator_search_dev",
+  "samples_per_device": 10,
+  "edit_counts": [2, 8, 16],
+  "candidate_top_k": 16,
+  "transition_supported": true,
+  "delta_ll": 4.0,
+  "delta_ll_selection": "smallest grid value with at-least-one candidate coverage >= 0.95 on generator_search_dev; selected by P3 v2 before the final P4 rerun",
+  "local_precheck": {
+    "max_normalized_peak_delta": 0.75,
+    "max_normalized_jump_increase": 1.0
+  },
+  "projection": {
+    "sample_rate_hz": 35000000.0,
+    "occupied_bandwidth_hz": 22000000.0,
+    "min_snr_db": 22.0,
+    "max_normalized_peak_delta": 1.0,
+    "match_reference_power": true,
+    "bandlimit_perturbation": true
+  },
+  "gate": {
+    "minimum_cross_entropy_gain_vs_uniform_nats": 0.05,
+    "minimum_original_top5_accuracy": 0.02,
+    "minimum_candidate_position_coverage": 0.90,
+    "minimum_identity_pooled": 0.98,
+    "minimum_identity_macro": 0.98,
+    "minimum_identity_device_for_10_samples": 0.90,
+    "minimum_waveform_tail_improvement_vs_full_random": 0.25
+  },
+  "victim_queries": 0,
+  "policy_gate_attack_feedback": false,
+  "final_test_used": false
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "wifib-p6-query-gate-v1",
+  "seed": 20260921,
+  "random_search_seeds": [20260921, 20260922, 20260923],
+  "source_pool": "reports/next_stage/source_pool.csv",
+  "edit_count": 8,
+  "query_budgets": [64, 128, 256],
+  "candidate_top_k": 16,
+  "candidate_actions_per_position": 4,
+  "maximum_preranked_positions": 64,
+  "delta_ll": 4.0,
+  "transition_supported": true,
+  "beam": {
+    "beam_width": 4,
+    "branch_per_state": 8,
+    "maximum_depth": 8,
+    "allow_stop_state": true
+  },
+  "query_matched_random": {
+    "sample_unique_edit_sets": true,
+    "select_lowest_victim_margin": true,
+    "maximum_sampling_attempt_multiplier": 20
+  },
+  "query_accounting": {
+    "candidate_queries_exclude_clean_baseline": true,
+    "final_audit_query_excluded": true,
+    "cache_identical_projected_candidate_states": true
+  },
+  "position_preranking": {
+    "surprisal_weight": 1.0,
+    "candidate_spread_weight": 0.25,
+    "decoder_sensitivity_weight": 0.25,
+    "uses_victim": false
+  },
+  "local_precheck": {
+    "max_normalized_peak_delta": 0.75,
+    "max_normalized_jump_increase": 1.0
+  },
+  "projection": {
+    "sample_rate_hz": 35000000.0,
+    "occupied_bandwidth_hz": 22000000.0,
+    "min_snr_db": 22.0,
+    "max_normalized_peak_delta": 1.0,
+    "match_reference_power": true,
+    "bandlimit_perturbation": true
+  },
+  "gate_q1_minimum_percentage_points": 5.0,
+  "gate_q2_maximum_query_fraction": 0.5,
+  "policy_gate_used": true,
+  "final_test_used": false,
+  "ppo_implementation_authorized": false
+}

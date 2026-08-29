@@ -1,0 +1,210 @@
+{
+  "cache_indices": [
+    1892,
+    2027,
+    30234,
+    30463,
+    48451,
+    48257,
+    51801,
+    51626,
+    55001,
+    55175,
+    58281,
+    58009,
+    5755,
+    5443,
+    9059,
+    8785,
+    12793,
+    12797,
+    16305,
+    15922,
+    19527,
+    19910,
+    23242,
+    23075,
+    26346,
+    26432,
+    33947,
+    34006,
+    37583,
+    37623,
+    40980,
+    41092,
+    44706,
+    44894
+  ],
+  "checkpoint": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\best.pt",
+  "examples": 34,
+  "hardness_gate": {
+    "passed": false,
+    "passing_edit_rates": [],
+    "thresholds": {
+      "min_dual_valid_hard_rate": 0.05,
+      "min_evaluator_identity_retention": 0.95
+    }
+  },
+  "probe_used_classifier_feedback": false,
+  "results": {
+    "0.0050": {
+      "actual_edit_fraction": 0.0048828125,
+      "dual_valid_hard_examples": 0,
+      "dual_valid_hard_rate": 0.0,
+      "edit_count": 10,
+      "evaluator_b": {
+        "edited_accuracy": 1.0,
+        "identity_retention_on_reference_correct": 1.0,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 27,
+      "requested_edit_rate": 0.005,
+      "rf_delta": {
+        "finite_fraction": 1.0,
+        "mean_delta_snr_db": 32.5991312827352,
+        "mean_nmse": 0.0005496508092619479,
+        "mean_waveform_correlation": 0.9997252225875854,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        73,
+        301,
+        368,
+        493,
+        623,
+        1113,
+        1149,
+        1623,
+        1624,
+        1815
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.8235294222831726,
+        "fool_rate_on_reference_correct": 0.0,
+        "reference_clean_accuracy": 0.7941176295280457
+      }
+    },
+    "0.0100": {
+      "actual_edit_fraction": 0.009765625,
+      "dual_valid_hard_examples": 0,
+      "dual_valid_hard_rate": 0.0,
+      "edit_count": 20,
+      "evaluator_b": {
+        "edited_accuracy": 1.0,
+        "identity_retention_on_reference_correct": 1.0,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 27,
+      "requested_edit_rate": 0.01,
+      "rf_delta": {
+        "finite_fraction": 1.0,
+        "mean_delta_snr_db": 34.10330420251148,
+        "mean_nmse": 0.0003887492639478296,
+        "mean_waveform_correlation": 0.9998056888580322,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        86,
+        315,
+        565,
+        577,
+        716,
+        730,
+        746,
+        1019,
+        1103,
+        1137,
+        1176,
+        1221,
+        1382,
+        1420,
+        1636,
+        1658,
+        1704,
+        1712,
+        1951,
+        2001
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.8529411554336548,
+        "fool_rate_on_reference_correct": 0.0,
+        "reference_clean_accuracy": 0.7941176295280457
+      }
+    },
+    "0.0200": {
+      "actual_edit_fraction": 0.02001953125,
+      "dual_valid_hard_examples": 1,
+      "dual_valid_hard_rate": 0.037037037037037035,
+      "edit_count": 41,
+      "evaluator_b": {
+        "edited_accuracy": 1.0,
+        "identity_retention_on_reference_correct": 1.0,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 27,
+      "requested_edit_rate": 0.02,
+      "rf_delta": {
+        "finite_fraction": 1.0,
+        "mean_delta_snr_db": 28.167236667322054,
+        "mean_nmse": 0.0015250227879732847,
+        "mean_waveform_correlation": 0.999237596988678,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        33,
+        121,
+        295,
+        319,
+        345,
+        349,
+        366,
+        422,
+        480,
+        493,
+        508,
+        510,
+        588,
+        614,
+        642,
+        692,
+        697,
+        740,
+        828,
+        934,
+        997,
+        999,
+        1067,
+        1091,
+        1114,
+        1253,
+        1258,
+        1271,
+        1274,
+        1289,
+        1424,
+        1429,
+        1505,
+        1512,
+        1553,
+        1599,
+        1602,
+        1650,
+        1929,
+        1956,
+        1971
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.8529411554336548,
+        "fool_rate_on_reference_correct": 0.037037037037037035,
+        "reference_clean_accuracy": 0.7941176295280457
+      }
+    }
+  },
+  "samples_per_device": 2,
+  "seconds": 9.875486135482788,
+  "split": "reward_validation",
+  "status": "complete",
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "training_used_classifier_feedback": false
+}

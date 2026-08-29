@@ -1,0 +1,74 @@
+{
+  "evaluator_visible_to_attack": false,
+  "examples": 68,
+  "results": {
+    "22.0": {
+      "budget_complex_rms": 0.07943282347242814,
+      "budget_snr_db": 22.0,
+      "dual_valid_hard_examples": 59,
+      "dual_valid_hard_rate": 1.0,
+      "evaluator_b": {
+        "adversarial_accuracy": 0.970588207244873,
+        "clean_accuracy": 0.9852941036224365,
+        "identity_retention_on_clean_correct": 0.9850746268656716
+      },
+      "joint_clean_examples": 59,
+      "rf_delta": {
+        "delta_out_of_band_energy_fraction": 0.2582424283027649,
+        "finite_fraction": 1.0,
+        "mean_delta_papr": 23.64835548400879,
+        "mean_delta_peak_abs": 0.25792673230171204,
+        "mean_nmse": 0.0036525391042232513,
+        "mean_output_papr": 2.121370553970337,
+        "mean_snr_db": 24.37405125795454,
+        "mean_waveform_correlation": 0.9981737732887268,
+        "output_power_mean": 1.0,
+        "output_power_std": 9.239652598580506e-08
+      },
+      "step_fraction": 0.2,
+      "steps": 10,
+      "victim_a": {
+        "adversarial_accuracy": 0.0,
+        "clean_accuracy": 0.8676470518112183,
+        "fool_rate_on_clean_correct": 1.0
+      }
+    },
+    "26.0": {
+      "budget_complex_rms": 0.05011872336272722,
+      "budget_snr_db": 26.0,
+      "dual_valid_hard_examples": 59,
+      "dual_valid_hard_rate": 1.0,
+      "evaluator_b": {
+        "adversarial_accuracy": 0.9852941036224365,
+        "clean_accuracy": 0.9852941036224365,
+        "identity_retention_on_clean_correct": 1.0
+      },
+      "joint_clean_examples": 59,
+      "rf_delta": {
+        "delta_out_of_band_energy_fraction": 0.25758612155914307,
+        "finite_fraction": 1.0,
+        "mean_delta_papr": 26.698070526123047,
+        "mean_delta_peak_abs": 0.19399000704288483,
+        "mean_nmse": 0.0019040261395275593,
+        "mean_output_papr": 2.0052237510681152,
+        "mean_snr_db": 27.20327093674941,
+        "mean_waveform_correlation": 0.9990479946136475,
+        "output_power_mean": 1.0,
+        "output_power_std": 7.740730012528729e-08
+      },
+      "step_fraction": 0.2,
+      "steps": 10,
+      "victim_a": {
+        "adversarial_accuracy": 0.0,
+        "clean_accuracy": 0.8676470518112183,
+        "fool_rate_on_clean_correct": 1.0
+      }
+    }
+  },
+  "samples_per_device": 4,
+  "seconds": 7.9042816162109375,
+  "seed": 20260902,
+  "split": "reward_validation",
+  "status": "complete",
+  "victim_visible_to_attack": true
+}

@@ -1,0 +1,13 @@
+{
+  "checkpoint": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\best.pt",
+  "condition_usage": "strong",
+  "correct_condition_nll": 2.3941780775785446,
+  "correct_condition_perplexity": 10.959186754976447,
+  "examples": 512,
+  "mean_output_probability_l1": 0.2531543870718451,
+  "shuffled_condition_nll": 2.658728413283825,
+  "shuffled_condition_perplexity": 14.278121680540867,
+  "shuffled_minus_correct_nll": 0.2645503357052803,
+  "status": "complete",
+  "tokens": 131072
+}

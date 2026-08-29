@@ -1,0 +1,61 @@
+{
+  "schema_version": "stage-g0-wifib-v1",
+  "frozen": true,
+  "data": {
+    "config_path": "E:\\exp7\\configs\\data\\rffi_data_v1.json",
+    "config_sha256": "a0cf1fdb4bd8f060e4d9af6302b9c29d0af15fa0dbd11383c95f11cf49ecca5a",
+    "manifest_checksums_path": "E:\\data_cache\\rffi_v1\\manifests\\manifest_checksums.json",
+    "manifest_checksums_sha256": "39e03ea6ad3b1bd0155b315ea763c3bb5e4d7f2ca05fa86d3e855dbb321a9fe5",
+    "normalization": "per-frame unit complex power: mean(I^2 + Q^2) = 1",
+    "window": {
+      "complex_length": 2048,
+      "start": 128
+    }
+  },
+  "models": {
+    "victim_a": {
+      "architecture": "time-domain residual 1-D CNN",
+      "best_epoch": 12,
+      "checkpoint": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\victim_a.pt",
+      "checkpoint_sha256": "d879174a6487e8b5f9554c251680dc71002ae7d60f1f4f8bcc09cf1c4046dccc",
+      "parameter_count": 78257,
+      "role": "attack-visible victim",
+      "metrics": {
+        "reward_validation_accuracy": 0.90542966120709,
+        "reward_validation_macro_f1": 0.8981859860468407,
+        "defense_train_accuracy": 0.8953214405923932,
+        "defense_train_macro_f1": 0.8876137457767451,
+        "final_test_accuracy": 0.8670193579415655,
+        "final_test_macro_f1": 0.8584990088985984
+      }
+    },
+    "evaluator_b": {
+      "architecture": "FFT-domain multi-scale 1-D CNN",
+      "best_epoch": 8,
+      "checkpoint": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\evaluator_b.pt",
+      "checkpoint_sha256": "a10cddfb7522358e3a3ad8e59ddf39755c50b7fdf6cdcc0c7c332b91cabe6286",
+      "parameter_count": 170237,
+      "role": "attack-hidden independent evaluator",
+      "metrics": {
+        "reward_validation_accuracy": 0.9973076060130133,
+        "reward_validation_macro_f1": 0.9973365429894668,
+        "defense_train_accuracy": 0.9964097385840907,
+        "defense_train_macro_f1": 0.9964008862421007,
+        "final_test_accuracy": 0.9859324275580137,
+        "final_test_macro_f1": 0.9858379128871365
+      }
+    }
+  },
+  "selection_policy": {
+    "checkpoint_selection_split": "reward_validation",
+    "final_test_used_for_selection": false,
+    "victim_a_visible_to_attack": true,
+    "evaluator_b_visible_to_attack": false,
+    "evaluate_attacks_only_on_clean-correct_source_samples": true
+  },
+  "limitations": [
+    "WiFi-B is a one-day dataset; final_test is a held chronological block, not a cross-day test.",
+    "Victim A has weak recall for some devices, so attack success must be conditioned on clean-correct inputs.",
+    "Evaluator B's very high same-day accuracy may include stable acquisition-domain features; cross-domain claims require ManyTx."
+  ]
+}

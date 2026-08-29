@@ -1,0 +1,153 @@
+{
+  "checkpoint": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\best.pt",
+  "checkpoint_epoch": 5,
+  "classification": {
+    "evaluator_b": {
+      "conditional_identity_accuracy": 0.11764705926179886,
+      "correct": 2,
+      "examples": 17,
+      "per_device_accuracy": {
+        "1": 0.0,
+        "10": 1.0,
+        "11": 1.0,
+        "12": 0.0,
+        "15": 0.0,
+        "28": 0.0,
+        "30": 0.0,
+        "31": 0.0,
+        "4": 0.0,
+        "40": 0.0,
+        "41": 0.0,
+        "43": 0.0,
+        "46": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      },
+      "predictions": [
+        "15",
+        "30",
+        "40",
+        "15",
+        "4",
+        "4",
+        "10",
+        "11",
+        "8",
+        "41",
+        "41",
+        "15",
+        "41",
+        "41",
+        "40",
+        "31",
+        "43"
+      ]
+    },
+    "victim_a": {
+      "conditional_identity_accuracy": 0.11764705926179886,
+      "correct": 2,
+      "examples": 17,
+      "per_device_accuracy": {
+        "1": 0.0,
+        "10": 0.0,
+        "11": 1.0,
+        "12": 0.0,
+        "15": 0.0,
+        "28": 0.0,
+        "30": 0.0,
+        "31": 0.0,
+        "4": 0.0,
+        "40": 0.0,
+        "41": 0.0,
+        "43": 1.0,
+        "46": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      },
+      "predictions": [
+        "11",
+        "11",
+        "40",
+        "40",
+        "11",
+        "40",
+        "43",
+        "11",
+        "11",
+        "40",
+        "40",
+        "40",
+        "40",
+        "43",
+        "40",
+        "43",
+        "43"
+      ]
+    }
+  },
+  "conditional_generation_gate": {
+    "checks": {
+      "evaluator_conditional_identity": false,
+      "finite_iq": true,
+      "no_exact_training_duplicate": true,
+      "unique_sequences": true,
+      "victim_conditional_identity": false
+    },
+    "passed": false,
+    "thresholds": {
+      "min_evaluator_identity": 0.8,
+      "min_victim_identity": 0.5
+    }
+  },
+  "diversity": {
+    "active_codes": 1018,
+    "token_perplexity": 771.9651994472755,
+    "unique_fraction": 1.0,
+    "unique_sequences": 17
+  },
+  "labels": [
+    "1",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "10",
+    "11",
+    "12",
+    "15",
+    "28",
+    "30",
+    "31",
+    "40",
+    "41",
+    "43",
+    "46"
+  ],
+  "memorization": {
+    "exact_training_duplicates": 0,
+    "maximum_same_device_token_agreement_max": 0.056640625,
+    "maximum_same_device_token_agreement_mean": 0.023868336397058824,
+    "nearest_candidates_per_device": 128
+  },
+  "rf_validity": {
+    "complex_power_mean": 1.007082462310791,
+    "complex_power_std": 0.009050695225596428,
+    "finite_fraction": 1.0,
+    "papr_max": 1.7315313816070557,
+    "papr_mean": 1.6997177600860596
+  },
+  "sampling": {
+    "samples_per_device": 1,
+    "seconds": 184.84023666381836,
+    "seed": 20260831,
+    "temperature": 0.0,
+    "top_p": 0.95
+  },
+  "status": "complete",
+  "training_used_classifier_feedback": false
+}

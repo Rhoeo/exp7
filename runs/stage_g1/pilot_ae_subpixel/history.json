@@ -1,0 +1,210 @@
+[
+  {
+    "epoch": 1,
+    "learning_rate": 0.000288581929876693,
+    "train": {
+      "total": 0.5041537419892848,
+      "waveform_nmse": 0.43837634893134236,
+      "correlation_loss": 0.265331857430283,
+      "spectral_log_l1": 0.19713749934453517,
+      "power_loss": 0.3906091212411411,
+      "vq_loss": 0.0,
+      "output_power": 0.6093908688053489,
+      "examples": 4096,
+      "seconds": 44.265782833099365
+    },
+    "validation": {
+      "total": 0.18188273021951318,
+      "waveform_nmse": 0.1534653315320611,
+      "correlation_loss": 0.07965449173934758,
+      "spectral_log_l1": 0.14743423461914062,
+      "power_loss": 0.11417054105550051,
+      "vq_loss": 0.0,
+      "output_power": 0.8858294598758221,
+      "examples": 1024,
+      "seconds": 1.8379175662994385
+    }
+  },
+  {
+    "epoch": 2,
+    "learning_rate": 0.0002560660171779821,
+    "train": {
+      "total": 0.10690643225098029,
+      "waveform_nmse": 0.08883094531483948,
+      "correlation_loss": 0.04515258099127095,
+      "spectral_log_l1": 0.11664778622798622,
+      "power_loss": 0.03790900114108808,
+      "vq_loss": 0.0,
+      "output_power": 0.9633797854185104,
+      "examples": 4096,
+      "seconds": 42.524608850479126
+    },
+    "validation": {
+      "total": 0.06497434608172625,
+      "waveform_nmse": 0.0524114805739373,
+      "correlation_loss": 0.02629512397106737,
+      "spectral_log_l1": 0.0926809161901474,
+      "power_loss": 0.013305229542311281,
+      "vq_loss": 0.0,
+      "output_power": 0.9909195173531771,
+      "examples": 1024,
+      "seconds": 1.349813461303711
+    }
+  },
+  {
+    "epoch": 3,
+    "learning_rate": 0.00020740251485476348,
+    "train": {
+      "total": 0.0506167275889311,
+      "waveform_nmse": 0.04002615851641167,
+      "correlation_loss": 0.020066827375558205,
+      "spectral_log_l1": 0.08027383644366637,
+      "power_loss": 0.011130053477245383,
+      "vq_loss": 0.0,
+      "output_power": 0.9926118021830916,
+      "examples": 4096,
+      "seconds": 40.567506313323975
+    },
+    "validation": {
+      "total": 0.03956883691716939,
+      "waveform_nmse": 0.030707563157193363,
+      "correlation_loss": 0.015373617585282773,
+      "spectral_log_l1": 0.06934524583630264,
+      "power_loss": 0.007787753769662231,
+      "vq_loss": 0.0,
+      "output_power": 0.9960648901760578,
+      "examples": 1024,
+      "seconds": 1.3350765705108643
+    }
+  },
+  {
+    "epoch": 4,
+    "learning_rate": 0.00015,
+    "train": {
+      "total": 0.03431045910110697,
+      "waveform_nmse": 0.026301529971533455,
+      "correlation_loss": 0.013166403470677324,
+      "spectral_log_l1": 0.06304610846564174,
+      "power_loss": 0.0077535592135973275,
+      "vq_loss": 0.0,
+      "output_power": 0.9959278618916869,
+      "examples": 4096,
+      "seconds": 40.406582832336426
+    },
+    "validation": {
+      "total": 0.029581440263427794,
+      "waveform_nmse": 0.022473398654256016,
+      "correlation_loss": 0.011235470767132938,
+      "spectral_log_l1": 0.05703031306620687,
+      "power_loss": 0.005629264458548278,
+      "vq_loss": 0.0,
+      "output_power": 0.9992985315620899,
+      "examples": 1024,
+      "seconds": 1.3734862804412842
+    }
+  },
+  {
+    "epoch": 5,
+    "learning_rate": 9.259748514523653e-05,
+    "train": {
+      "total": 0.027096241217805073,
+      "waveform_nmse": 0.020392065300256945,
+      "correlation_loss": 0.010202003788435832,
+      "spectral_log_l1": 0.0535696346196346,
+      "power_loss": 0.006540236427099444,
+      "vq_loss": 0.0,
+      "output_power": 0.9972560508176684,
+      "examples": 4096,
+      "seconds": 43.76555824279785
+    },
+    "validation": {
+      "total": 0.024842627346515656,
+      "waveform_nmse": 0.018647830205736682,
+      "correlation_loss": 0.00932628201553598,
+      "spectral_log_l1": 0.050122341490350664,
+      "power_loss": 0.004998693708330393,
+      "vq_loss": 0.0,
+      "output_power": 0.9986162632703781,
+      "examples": 1024,
+      "seconds": 1.3409183025360107
+    }
+  },
+  {
+    "epoch": 6,
+    "learning_rate": 4.3933982822017876e-05,
+    "train": {
+      "total": 0.02339550227043219,
+      "waveform_nmse": 0.017420078729628585,
+      "correlation_loss": 0.00871433355496265,
+      "spectral_log_l1": 0.0482417952734977,
+      "power_loss": 0.005596206494374201,
+      "vq_loss": 0.0,
+      "output_power": 0.9976597232744098,
+      "examples": 4096,
+      "seconds": 42.60497784614563
+    },
+    "validation": {
+      "total": 0.022199642495252192,
+      "waveform_nmse": 0.016480036050779745,
+      "correlation_loss": 0.008250340935774148,
+      "spectral_log_l1": 0.04627872130367905,
+      "power_loss": 0.005333999637514353,
+      "vq_loss": 0.0,
+      "output_power": 0.996293269097805,
+      "examples": 1024,
+      "seconds": 1.3483796119689941
+    }
+  },
+  {
+    "epoch": 7,
+    "learning_rate": 1.1418070123306989e-05,
+    "train": {
+      "total": 0.021563285481533967,
+      "waveform_nmse": 0.0159612830466358,
+      "correlation_loss": 0.007983903647982515,
+      "spectral_log_l1": 0.04548410320421681,
+      "power_loss": 0.005104033538373187,
+      "vq_loss": 0.0,
+      "output_power": 0.9979268861934543,
+      "examples": 4096,
+      "seconds": 42.62123155593872
+    },
+    "validation": {
+      "total": 0.021011940960306674,
+      "waveform_nmse": 0.015541167522314936,
+      "correlation_loss": 0.007778081810101867,
+      "spectral_log_l1": 0.04451264755334705,
+      "power_loss": 0.004834012361243367,
+      "vq_loss": 0.0,
+      "output_power": 0.9969933480024338,
+      "examples": 1024,
+      "seconds": 1.3983039855957031
+    }
+  },
+  {
+    "epoch": 8,
+    "learning_rate": 0.0,
+    "train": {
+      "total": 0.020829462839174084,
+      "waveform_nmse": 0.015381941346277017,
+      "correlation_loss": 0.0076938707497902215,
+      "spectral_log_l1": 0.044368366041453555,
+      "power_loss": 0.0048259529285132885,
+      "vq_loss": 0.0,
+      "output_power": 0.9980776938609779,
+      "examples": 4096,
+      "seconds": 42.94522666931152
+    },
+    "validation": {
+      "total": 0.020682796428445727,
+      "waveform_nmse": 0.015291307325242087,
+      "correlation_loss": 0.0076506693148985505,
+      "spectral_log_l1": 0.04404883668757975,
+      "power_loss": 0.004430770932231098,
+      "vq_loss": 0.0,
+      "output_power": 0.997787507250905,
+      "examples": 1024,
+      "seconds": 1.3818726539611816
+    }
+  }
+]

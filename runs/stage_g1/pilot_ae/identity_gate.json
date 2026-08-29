@@ -1,0 +1,81 @@
+{
+  "checkpoint": "E:\\exp7\\runs\\stage_g1\\pilot_ae\\best.pt",
+  "checkpoint_epoch": 4,
+  "classification": {
+    "evaluator_b": {
+      "accuracy_drop_percentage_points": 32.71484375,
+      "clean_accuracy": 0.9990234375,
+      "clean_correct_examples": 1023,
+      "clean_correct_identity_retention": 0.6725317693059628,
+      "matched_noise_accuracy": 0.9609375,
+      "matched_noise_clean_correct_identity_retention": 0.9618768328445748,
+      "matched_noise_prediction_agreement": 0.9619140625,
+      "prediction_agreement": 0.6728515625,
+      "reconstructed_accuracy": 0.671875
+    },
+    "victim_a": {
+      "accuracy_drop_percentage_points": 51.07421875,
+      "clean_accuracy": 0.8994140625,
+      "clean_correct_examples": 921,
+      "clean_correct_identity_retention": 0.40499457111834963,
+      "matched_noise_accuracy": 0.62109375,
+      "matched_noise_clean_correct_identity_retention": 0.6644951140065146,
+      "matched_noise_prediction_agreement": 0.6357421875,
+      "prediction_agreement": 0.3779296875,
+      "reconstructed_accuracy": 0.388671875
+    }
+  },
+  "classifier_metadata": {
+    "evaluator_b": {
+      "architecture": "evaluator_b",
+      "checkpoint": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\evaluator_b.pt",
+      "checkpoint_epoch": 8,
+      "frozen": true
+    },
+    "victim_a": {
+      "architecture": "victim_a",
+      "checkpoint": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\victim_a.pt",
+      "checkpoint_epoch": 12,
+      "frozen": true
+    }
+  },
+  "codebook": null,
+  "dataset": "wifib",
+  "device": "cuda",
+  "identity_gate": {
+    "checks": {
+      "evaluator_accuracy_drop": false,
+      "finite_output": true,
+      "reconstruction_snr": true,
+      "victim_accuracy_drop": false
+    },
+    "passed": false,
+    "thresholds": {
+      "max_evaluator_drop_percentage_points": 5.0,
+      "max_victim_drop_percentage_points": 10.0,
+      "min_reconstruction_snr_db": 10.0
+    }
+  },
+  "model_config": {
+    "base_width": 16,
+    "codebook_size": 256,
+    "commitment_beta": 0.25,
+    "latent_dim": 64,
+    "mode": "ae"
+  },
+  "reconstruction": {
+    "examples": 1024,
+    "finite_fraction": 1.0,
+    "mean_nmse": 0.017382178019033745,
+    "mean_spectral_log_l1": 0.0513825353118591,
+    "mean_waveform_correlation": 0.991305467672646,
+    "output_complex_power_mean": 0.9976941384375095,
+    "output_complex_power_std": 0.007961691492966555,
+    "peak_absolute": 1.708497405052185,
+    "reconstruction_snr_db": 17.598958065764347,
+    "seconds": 6.260130882263184
+  },
+  "split": "reward_validation",
+  "status": "complete",
+  "training_used_classifier_feedback": false
+}

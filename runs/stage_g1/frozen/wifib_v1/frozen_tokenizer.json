@@ -1,0 +1,42 @@
+{
+  "schema_version": "stage-g1-wifib-v1",
+  "frozen": true,
+  "checkpoint": "E:\\exp7\\runs\\stage_g1\\frozen\\wifib_v1\\vqvae_p1_k1024.pt",
+  "checkpoint_sha256": "331ff5136efd8ed45ef444b348e7bb51b0b77a8e1da5523a4fbeb40ae0e3607e",
+  "checkpoint_epoch": 2,
+  "selection_split": "reward_validation",
+  "final_test_used_for_selection": false,
+  "training_used_classifier_feedback": false,
+  "tokenizer": {
+    "architecture": "polyphase",
+    "patch_size_complex_samples": 1,
+    "tokens_per_waveform": 2048,
+    "latent_dim": 2,
+    "codebook_size": 1024,
+    "active_codes": 1024,
+    "perplexity": 981.66
+  },
+  "full_reward_validation": {
+    "report": "E:\\exp7\\runs\\stage_g1\\pilot_vqvae_p1_k1024\\identity_gate_full_reward_validation.json",
+    "report_sha256": "447b4b4601c802c0b5e4f53606fc03f27105c9951228aa46e51301b5a0fb18eb",
+    "reconstruction_snr_db": 30.36,
+    "waveform_correlation": 0.9995,
+    "victim_a_clean_accuracy": 0.9054,
+    "victim_a_reconstructed_accuracy": 0.8892,
+    "victim_a_drop_percentage_points": 1.63,
+    "victim_a_clean_correct_identity_retention": 0.9689,
+    "evaluator_b_clean_accuracy": 0.9973,
+    "evaluator_b_reconstructed_accuracy": 0.9973,
+    "evaluator_b_drop_percentage_points": 0.0,
+    "evaluator_b_clean_correct_identity_retention": 0.9997,
+    "identity_gate": "pass"
+  },
+  "usage_policy": {
+    "freeze_during_rf_gpt_training": true,
+    "freeze_during_ppo": true,
+    "do_not_use_final_test_for_model_selection": true,
+    "victim_a_may_be_used_only_after_base_generator_training": true,
+    "evaluator_b_is_never_visible_to_generator_or_policy_optimization": true
+  }
+}
+

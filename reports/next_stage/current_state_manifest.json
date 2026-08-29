@@ -1,0 +1,540 @@
+{
+  "schema_version": "rffi-next-stage-report-v1",
+  "stage": "P0_current_state_freeze",
+  "created_at_utc": "2026-08-28T10:02:38.447903+00:00",
+  "git_commit": null,
+  "git": {
+    "is_repository": false,
+    "commit": null,
+    "dirty": null
+  },
+  "source_tree_hash": "67f09548e4659f13168403c1989192a9a4a9fd24b4c4e18e3f15e46ed57d1146",
+  "config_hash": "a0cf1fdb4bd8f060e4d9af6302b9c29d0af15fa0dbd11383c95f11cf49ecca5a",
+  "data_split_hash": "39e03ea6ad3b1bd0155b315ea763c3bb5e4d7f2ca05fa86d3e855dbb321a9fe5",
+  "checkpoint_hash": "8da705eb9096b1288c51e8ea1a79a8a5cea9ead6e684f6ed8487d124da4a5307",
+  "seeds": [
+    20260828,
+    20260830
+  ],
+  "source_count": null,
+  "victim_query_budget": 0,
+  "edit_budget": 0,
+  "environment": {
+    "python_executable": "E:\\anaconda\\envs\\fbs_py310\\python.exe",
+    "python_version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch_version": "2.10.0+cpu",
+    "numpy_version": "2.2.5",
+    "cuda_available": false,
+    "torch_cuda_version": null,
+    "gpu": null,
+    "cpu_count": 8,
+    "disks": [
+      {
+        "root": "D:\\",
+        "total_bytes": 150074290176,
+        "used_bytes": 89819439104,
+        "free_bytes": 60254851072
+      },
+      {
+        "root": "E:\\",
+        "total_bytes": 154966945792,
+        "used_bytes": 120770514944,
+        "free_bytes": 34196430848
+      }
+    ]
+  },
+  "tests": {
+    "status": "pass",
+    "count": 17,
+    "command": "E:\\anaconda\\envs\\fbs_py310\\python.exe -m unittest discover -s tests -v"
+  },
+  "metrics": {
+    "frozen_hash_checks_passed": 5,
+    "frozen_hash_checks_total": 5,
+    "source_tree_files": 37
+  },
+  "artifacts": {
+    "data_config": {
+      "path": "E:\\exp7\\configs\\data\\rffi_data_v1.json",
+      "role": "frozen_data_config",
+      "status": "frozen",
+      "bytes": 1265,
+      "sha256": "a0cf1fdb4bd8f060e4d9af6302b9c29d0af15fa0dbd11383c95f11cf49ecca5a"
+    },
+    "manifest_checksums": {
+      "path": "E:\\data_cache\\rffi_v1\\manifests\\manifest_checksums.json",
+      "role": "data_manifest_checksums",
+      "status": "frozen",
+      "bytes": 676,
+      "sha256": "39e03ea6ad3b1bd0155b315ea763c3bb5e4d7f2ca05fa86d3e855dbb321a9fe5"
+    },
+    "dataset_audit": {
+      "path": "E:\\data_cache\\rffi_v1\\manifests\\dataset_audit.json",
+      "role": "data_audit",
+      "status": "frozen",
+      "bytes": 23387,
+      "sha256": "06384ef00ce9dc3562ddc0a8a7fd9da9c1ab543c0a6206f08b1a2ba31d37c1dc"
+    },
+    "wifib_cache_metadata": {
+      "path": "E:\\data_cache\\rffi_v1\\wifib\\cache_metadata.json",
+      "role": "iq_cache_metadata",
+      "status": "frozen",
+      "bytes": 673,
+      "sha256": "9643823ea112cd5d5580b2eb3540457f9d4e4cc23e85dc4a65cc1aecff573362"
+    },
+    "wifib_cache_validation": {
+      "path": "E:\\data_cache\\rffi_v1\\wifib\\cache_validation.json",
+      "role": "iq_cache_validation",
+      "status": "frozen",
+      "bytes": 186,
+      "sha256": "402f3776b7e1a8504f84c71e9ca865929cba7ac0de641e9987e3896a73b5ecb3"
+    },
+    "token_cache_metadata": {
+      "path": "E:\\data_cache\\rffi_v1\\tokens\\wifib_vq_p1_k1024\\metadata.json",
+      "role": "token_cache_metadata",
+      "status": "frozen",
+      "bytes": 1135,
+      "sha256": "bd1377ddc37357be0faf8c3c3d63c88a1250f61a1fcde05f87fdd5836c7a85bd"
+    },
+    "victim_a": {
+      "path": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\victim_a.pt",
+      "role": "attack_visible_victim",
+      "status": "frozen",
+      "bytes": 994194,
+      "sha256": "d879174a6487e8b5f9554c251680dc71002ae7d60f1f4f8bcc09cf1c4046dccc"
+    },
+    "evaluator_b": {
+      "path": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\evaluator_b.pt",
+      "role": "preliminary_identity_auditor_only",
+      "status": "frozen",
+      "bytes": 2100946,
+      "sha256": "a10cddfb7522358e3a3ad8e59ddf39755c50b7fdf6cdcc0c7c332b91cabe6286"
+    },
+    "frozen_models_record": {
+      "path": "E:\\exp7\\runs\\stage_g0\\frozen\\wifib_v1\\frozen_models.json",
+      "role": "model_provenance",
+      "status": "frozen",
+      "bytes": 2658,
+      "sha256": "9ca00a2d0f61a892d6a535dbe6cc134fac0807b19daf9a36147efe745da99d4d"
+    },
+    "vq_codec": {
+      "path": "E:\\exp7\\runs\\stage_g1\\frozen\\wifib_v1\\vqvae_p1_k1024.pt",
+      "role": "high_fidelity_reconstruction_codec",
+      "status": "frozen_not_ppo_ready",
+      "bytes": 33036,
+      "sha256": "331ff5136efd8ed45ef444b348e7bb51b0b77a8e1da5523a4fbeb40ae0e3607e"
+    },
+    "frozen_codec_record": {
+      "path": "E:\\exp7\\runs\\stage_g1\\frozen\\wifib_v1\\frozen_tokenizer.json",
+      "role": "codec_provenance",
+      "status": "frozen",
+      "bytes": 1632,
+      "sha256": "fb84dfec80764018cfa34876c5b441f3897165761d7e7c87db23128ae2ae7635"
+    },
+    "rfgpt_pilot": {
+      "path": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\best.pt",
+      "role": "teacher_forced_diagnostic_and_local_baseline_only",
+      "status": "frozen_no_go_long_rollout",
+      "bytes": 6943210,
+      "sha256": "2ced8bfe4517a6b81f041d2f229ba39a432cf7005805e5314a2be6c855b182f2"
+    },
+    "rfgpt_pilot_config": {
+      "path": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\run_config.json",
+      "role": "diagnostic_config",
+      "status": "frozen",
+      "bytes": 1034,
+      "sha256": "869d1541501f0942b08f72f6668d0cc08b8ca8f0eda2871df829845d590beb76"
+    },
+    "progress_report": {
+      "path": "E:\\exp7\\reports\\EXPERIMENT_PROGRESS_REPORT_2026-08-28.md",
+      "role": "historical_report",
+      "status": "frozen",
+      "bytes": 10469,
+      "sha256": "867bbd330b98954f9f8630db74447f807c8193f087a0675ac5e3d40e99224c0c"
+    },
+    "g1_report": {
+      "path": "E:\\exp7\\reports\\stage_g1\\WiFiB_Stage_G1_Report.md",
+      "role": "historical_report",
+      "status": "frozen",
+      "bytes": 2569,
+      "sha256": "a48abf5ae51eda1506d4590fa8761ddd1b2617090050726d651f6b25d5e6b5ab"
+    },
+    "g4_report": {
+      "path": "E:\\exp7\\reports\\stage_g4\\WiFiB_Stage_G4_Hardness_Report.md",
+      "role": "historical_report",
+      "status": "frozen_diagnostic_only",
+      "bytes": 3251,
+      "sha256": "0bc0e0e672427c4ac56accef8ae0bd3d7a68f9ce1e5c31b5f74dcc4b3c5af70b"
+    },
+    "expert_execution_spec": {
+      "path": "E:\\exp7\\RFFI_NEXT_STAGE_CODEX_EXECUTION_SPEC_2026-08-28.md",
+      "role": "expert_input",
+      "status": "reference",
+      "bytes": 26235,
+      "sha256": "34c836f23a12a512e2bd52b8cea52c6b4d545dd0e2be19252058f479bb9862e1"
+    },
+    "next_stage_plan": {
+      "path": "E:\\exp7\\reports\\next_stage\\NEXT_STAGE_IMPLEMENTATION_PLAN.md",
+      "role": "approved_execution_plan",
+      "status": "current",
+      "bytes": 19548,
+      "sha256": "fea5693afd476eb21d41f06386411071dc8f05f9f16264ca4a9028d5d824cbd1"
+    }
+  },
+  "source_tree": [
+    {
+      "path": "E:\\exp7\\configs\\data\\rffi_data_v1.json",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 1265,
+      "sha256": "a0cf1fdb4bd8f060e4d9af6302b9c29d0af15fa0dbd11383c95f11cf49ecca5a",
+      "relative_path": "configs/data/rffi_data_v1.json"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 52,
+      "sha256": "8659c5bb5e1ce024ef8ae64d83d3ec5cdf7a4b9648524a5b8c8cc0f04e5f0df5",
+      "relative_path": "rffi_core/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\attacks\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 53,
+      "sha256": "7653ccf531329133c966cef498931d8c6a280b5bfcb14dbf551932b3f82f8691",
+      "relative_path": "rffi_core/attacks/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\attacks\\pgd_baseline.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 12448,
+      "sha256": "a01a3a32bd96d106cc8dc6aaa39ece60373860f04ed4077e7f965f3db04a50dc",
+      "relative_path": "rffi_core/attacks/pgd_baseline.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\attacks\\rf_constraints.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 851,
+      "sha256": "393bd549c25a525b7e2b60730ee405adc0a2adfb5b976e6c054b255430783c16",
+      "relative_path": "rffi_core/attacks/rf_constraints.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 62,
+      "sha256": "ee0569d19c4dd455dc4b32f4f740d3824cb3d1f734f39d873db2916c9ec94970",
+      "relative_path": "rffi_core/data/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\audit_wifib_windows.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 11580,
+      "sha256": "72e89fa14e51b144cd47923942998bf5171b7a17feeb8a77b981a14af6257779",
+      "relative_path": "rffi_core/data/audit_wifib_windows.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\build_data_manifest.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 26641,
+      "sha256": "6663581ad586e4431cdbcfb8c529f53e190374de7b1d67027c0a2c43e34d7dc4",
+      "relative_path": "rffi_core/data/build_data_manifest.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\convert_manytx_cache.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 11786,
+      "sha256": "45b84e2e11d697cdbc4ea011b26e94cea254fa0b2975ae1a6aa6dcb18ffdcd81",
+      "relative_path": "rffi_core/data/convert_manytx_cache.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\convert_wifib_cache.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 6887,
+      "sha256": "ddfd1bdb7e2f48565283444edf797246441ace49b9cdffa7c0cadb7c31990299",
+      "relative_path": "rffi_core/data/convert_wifib_cache.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\datasets.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 11010,
+      "sha256": "376dae2f235143607bd30c4a9b3a0d7cd7fda791b5b6348e2ee5d71d20819e4c",
+      "relative_path": "rffi_core/data/datasets.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\smoke_test_datasets.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 4886,
+      "sha256": "e8d083ddeed16f728db1512ccfdf4c7c85e264fb9d502ff2fed93a843891fa32",
+      "relative_path": "rffi_core/data/smoke_test_datasets.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\token_datasets.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 1965,
+      "sha256": "99418118078e69de4df868d9eb3ec703440fa41da890444b25193e7e6771ab5e",
+      "relative_path": "rffi_core/data/token_datasets.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\data\\validate_data_manifest.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 7565,
+      "sha256": "7f4a13cf923bf7616bab8da4611c809babe8a18d67a407b7d76dea5c2a9c8741",
+      "relative_path": "rffi_core/data/validate_data_manifest.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\experiments\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 56,
+      "sha256": "7e5c84fb3ee7f5eed433180730af52bfb29632b2e945245dc540f973552844af",
+      "relative_path": "rffi_core/experiments/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\experiments\\freeze_current_state.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 14007,
+      "sha256": "565c6902dc7fda493c65e5434392bac3fd4da2cfa56839a54a826d9f1930e344",
+      "relative_path": "rffi_core/experiments/freeze_current_state.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 57,
+      "sha256": "e231c2690791fc5c89a66cb11ff7bb3d805a9daa1188e8a1b9ad90b736ccb07b",
+      "relative_path": "rffi_core/generators/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\rfgpt\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 131,
+      "sha256": "d0eeb450df3a0bd20a0262f4c412a5ac9326c804c9ec514ad8be6fcdfc9e761b",
+      "relative_path": "rffi_core/generators/rfgpt/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\rfgpt\\evaluate_condition_usage.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 5384,
+      "sha256": "e56b64ea1cf760b1e31379f9f711726497fc12b7146bf7068fe9c44b0aa7e534",
+      "relative_path": "rffi_core/generators/rfgpt/evaluate_condition_usage.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\rfgpt\\evaluate_generation.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 16463,
+      "sha256": "235dda54e4d8a5e7b8e1b1d5c55c2167ce495eba2bf2386b0a7b9cc72a8516ef",
+      "relative_path": "rffi_core/generators/rfgpt/evaluate_generation.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\rfgpt\\models.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 5601,
+      "sha256": "618337069f02ea610d5b8df5aa93af5f21511459d7b026c36486bf0a1679ed57",
+      "relative_path": "rffi_core/generators/rfgpt/models.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\rfgpt\\probe_token_edits.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 16367,
+      "sha256": "a6b207bc0659d34e630246aeae78c6744bef82920a167c2e6daf520d68393e4b",
+      "relative_path": "rffi_core/generators/rfgpt/probe_token_edits.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\rfgpt\\train_rfgpt.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 13408,
+      "sha256": "72270ed42114af26e5e137e9f85124bc90bc44579663846e6d9728bed1510581",
+      "relative_path": "rffi_core/generators/rfgpt/train_rfgpt.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\vqvae\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 139,
+      "sha256": "d355c5cdf2147c4c02bb2657fea8c890c205ccb02a695b6e9f6357b4b5dd25d3",
+      "relative_path": "rffi_core/generators/vqvae/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\vqvae\\cache_tokens.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 5849,
+      "sha256": "ee72da848b79fcff0fa72c65bdfefeffbf4b991e0d0455727077d44895b25da8",
+      "relative_path": "rffi_core/generators/vqvae/cache_tokens.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\vqvae\\evaluate_reconstruction.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 14955,
+      "sha256": "030653bb9d831de22236b4bbcc2be41fb22189260d7371fb263f911becc4eb8e",
+      "relative_path": "rffi_core/generators/vqvae/evaluate_reconstruction.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\vqvae\\losses.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 2185,
+      "sha256": "f4218693ae3068350cdfbd3ece1cc36f1e3969bbf158c300ef6b5d086a648589",
+      "relative_path": "rffi_core/generators/vqvae/losses.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\vqvae\\models.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 14413,
+      "sha256": "1b0db0a6c8d0684a66d1d13116f7c877acf020e10646375bc79a9df0bcab94b1",
+      "relative_path": "rffi_core/generators/vqvae/models.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\generators\\vqvae\\train_reconstruction.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 12894,
+      "sha256": "77c53a02114c1dbec2e3a047a2268c400c40ba3d63497a02185f26c45e014659",
+      "relative_path": "rffi_core/generators/vqvae/train_reconstruction.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\victim\\__init__.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 61,
+      "sha256": "76e65944dee9eac61b51c2041fe30858a820405c63991794be07d90518a7931f",
+      "relative_path": "rffi_core/victim/__init__.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\victim\\evaluate_baseline.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 5847,
+      "sha256": "1d7ca19eae3a9090e9bb487e7e49c991a675886da8a033eae449004ebb7fa749",
+      "relative_path": "rffi_core/victim/evaluate_baseline.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\victim\\models.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 5003,
+      "sha256": "8bb43d12a934b478e63530b2913842d565eeb98b3c04b3c54e752a931526218a",
+      "relative_path": "rffi_core/victim/models.py"
+    },
+    {
+      "path": "E:\\exp7\\rffi_core\\victim\\train_baseline.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 11562,
+      "sha256": "9c8708f8d8ccbd61dcda0282bb6e3209bf77550453994efd8dcc38804cf22451",
+      "relative_path": "rffi_core/victim/train_baseline.py"
+    },
+    {
+      "path": "E:\\exp7\\tests\\test_data_manifest.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 3858,
+      "sha256": "f9a478443529da153282b6b8fe30575c0f5d6770a03cda5303a6f0ce20d91e22",
+      "relative_path": "tests/test_data_manifest.py"
+    },
+    {
+      "path": "E:\\exp7\\tests\\test_rf_constraints.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 503,
+      "sha256": "9e4bb6ec00e801d0fa91a1f35d248c7f174236432434e78dbea9b3db9e655db3",
+      "relative_path": "tests/test_rf_constraints.py"
+    },
+    {
+      "path": "E:\\exp7\\tests\\test_rfgpt.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 2011,
+      "sha256": "264d6b572f9d0c3d2645ff0ba37892cd0c25210649667dc6cea030340584dd3c",
+      "relative_path": "tests/test_rfgpt.py"
+    },
+    {
+      "path": "E:\\exp7\\tests\\test_vqvae.py",
+      "role": "source_or_config",
+      "status": "current",
+      "bytes": 4483,
+      "sha256": "c778663f2a0e3533a58159aeb783e8faa768c1c90a2a2e01efb1a8476ccde784",
+      "relative_path": "tests/test_vqvae.py"
+    }
+  ],
+  "embedded_hash_verification": [
+    {
+      "name": "victim_a",
+      "expected_sha256": "d879174a6487e8b5f9554c251680dc71002ae7d60f1f4f8bcc09cf1c4046dccc",
+      "actual_sha256": "d879174a6487e8b5f9554c251680dc71002ae7d60f1f4f8bcc09cf1c4046dccc",
+      "passed": true
+    },
+    {
+      "name": "evaluator_b",
+      "expected_sha256": "a10cddfb7522358e3a3ad8e59ddf39755c50b7fdf6cdcc0c7c332b91cabe6286",
+      "actual_sha256": "a10cddfb7522358e3a3ad8e59ddf39755c50b7fdf6cdcc0c7c332b91cabe6286",
+      "passed": true
+    },
+    {
+      "name": "vq_codec",
+      "expected_sha256": "331ff5136efd8ed45ef444b348e7bb51b0b77a8e1da5523a4fbeb40ae0e3607e",
+      "actual_sha256": "331ff5136efd8ed45ef444b348e7bb51b0b77a8e1da5523a4fbeb40ae0e3607e",
+      "passed": true
+    },
+    {
+      "name": "data_config",
+      "expected_sha256": "a0cf1fdb4bd8f060e4d9af6302b9c29d0af15fa0dbd11383c95f11cf49ecca5a",
+      "actual_sha256": "a0cf1fdb4bd8f060e4d9af6302b9c29d0af15fa0dbd11383c95f11cf49ecca5a",
+      "passed": true
+    },
+    {
+      "name": "manifest_checksums",
+      "expected_sha256": "39e03ea6ad3b1bd0155b315ea763c3bb5e4d7f2ca05fa86d3e855dbb321a9fe5",
+      "actual_sha256": "39e03ea6ad3b1bd0155b315ea763c3bb5e4d7f2ca05fa86d3e855dbb321a9fe5",
+      "passed": true
+    }
+  ],
+  "missing_artifacts": [],
+  "historical_final_test_access": {
+    "accessed_before_P0": true,
+    "evidence": "Frozen G0 provenance contains baseline final_test metrics.",
+    "used_for_checkpoint_selection": false,
+    "policy_from_P0_onward": "sealed; do not recompute or use for selection until final protocol is frozen"
+  },
+  "formal_conclusions": {
+    "vq_codec": "PASS as high-fidelity reconstruction codec only",
+    "causal_rfgpt_long_rollout": "NO-GO",
+    "sparse_token_editing": "PARTIAL PASS",
+    "ppo_readiness": "NOT REACHED; P7 prohibited"
+  },
+  "gate": {
+    "status": "PASS",
+    "reason": "Required provenance artifacts exist, embedded hashes match, and 17 tests pass."
+  },
+  "next_allowed_stage": "P1_data_roles_and_policy_gate",
+  "prohibited_actions": [
+    "access final_test signal data or recompute final_test metrics",
+    "scale causal RF-GPT long-rollout generation",
+    "train or implement PPO",
+    "use Evaluator B in proposal, reward, state, or online filtering",
+    "integrate ManyTx into current training"
+  ]
+}

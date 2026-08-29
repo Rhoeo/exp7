@@ -1,0 +1,28 @@
+[
+  {
+    "epoch": 1,
+    "learning_rate": 0.0,
+    "train": {
+      "total": -7.404014679135429e-09,
+      "waveform_nmse": 0.0,
+      "correlation_loss": -7.404014468193054e-08,
+      "spectral_log_l1": 0.0,
+      "power_loss": 0.0,
+      "vq_loss": 0.0,
+      "output_power": 1.0,
+      "examples": 256,
+      "seconds": 1.0355913639068604
+    },
+    "validation": {
+      "total": -7.28759919077504e-09,
+      "waveform_nmse": 0.0,
+      "correlation_loss": -7.28759914636612e-08,
+      "spectral_log_l1": 0.0,
+      "power_loss": 0.0,
+      "vq_loss": 0.0,
+      "output_power": 1.0,
+      "examples": 256,
+      "seconds": 0.0999307632446289
+    }
+  }
+]

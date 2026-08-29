@@ -1,0 +1,23 @@
+{
+  "batch_size": 16,
+  "class_count": 17,
+  "cuda_version": "12.1",
+  "data_config": "configs/data/rffi_data_v1.json",
+  "dataset": "wifib",
+  "device": "auto",
+  "epochs": 1,
+  "equalized": 0,
+  "learning_rate": 0.0003,
+  "max_train_samples": 2048,
+  "max_val_samples": 1024,
+  "model": "victim_a",
+  "num_workers": 0,
+  "output_dir": "runs\\stage_g0\\wifib\\victim_a_pilot",
+  "parameter_count": 173249,
+  "resolved_device": "cuda",
+  "seed": 20260828,
+  "torch_version": "2.5.1",
+  "train_examples": 2048,
+  "validation_examples": 1024,
+  "weight_decay": 0.0001
+}

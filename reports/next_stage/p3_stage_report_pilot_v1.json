@@ -1,0 +1,107 @@
+{
+  "schema_version": "rffi-next-stage-report-v1",
+  "stage": "P3_masked_infill_smoke",
+  "git_commit": null,
+  "config_hash": "36d18a11d2a05916d6c4784e1463406578729eae3af134d4b416b74202fb901b",
+  "data_split_hash": "91f138f0e6a69a16030b5f9c937b0ec3514e2d1102dbd804bca738397ed51698",
+  "checkpoint_hash": "270ce2032e5955c36f21b167bf9502efbe6e90a362f553a7ae5d004f90e33287",
+  "seeds": [
+    20260902
+  ],
+  "source_count": 512,
+  "victim_query_budget": 0,
+  "edit_budget": [
+    1,
+    2,
+    4
+  ],
+  "metrics": {
+    "schema_version": "wifib-infill-validation-v1",
+    "stage": "P3_masked_infill_smoke",
+    "run_mode": "cpu_pilot",
+    "checkpoint": "E:\\exp7\\runs\\next_stage\\p3_infill_pilot_v1\\best.pt",
+    "checkpoint_sha256": "270ce2032e5955c36f21b167bf9502efbe6e90a362f553a7ae5d004f90e33287",
+    "config": "E:\\exp7\\configs\\generator\\wifib_masked_infill_v1.yaml",
+    "config_sha256": "36d18a11d2a05916d6c4784e1463406578729eae3af134d4b416b74202fb901b",
+    "validation_role": "generator_search_dev",
+    "validation_examples": 512,
+    "masked_targets": 1185,
+    "loss": 6.927391224068429,
+    "top1_accuracy": 0.002531645569620253,
+    "top5_accuracy": 0.007594936708860759,
+    "mean_prior_candidates": 12.025316455696203,
+    "delta_ll_curves": {
+      "1.0": {
+        "at_least_one_coverage": 0.9907172995780591,
+        "at_least_four_coverage": 0.8540084388185654,
+        "mean_candidates": 11.739240506329114,
+        "median_candidates": 15.0,
+        "no_op_rate": 0.009282700421940928,
+        "replacement_token_entropy_nats": 4.884086098226586,
+        "dominant_replacement_fraction": 0.027257240204429302
+      },
+      "2.0": {
+        "at_least_one_coverage": 0.9907172995780591,
+        "at_least_four_coverage": 0.8616033755274262,
+        "mean_candidates": 12.017721518987342,
+        "median_candidates": 15.0,
+        "no_op_rate": 0.009282700421940928,
+        "replacement_token_entropy_nats": 4.884086098226586,
+        "dominant_replacement_fraction": 0.027257240204429302
+      },
+      "4.0": {
+        "at_least_one_coverage": 0.9924050632911392,
+        "at_least_four_coverage": 0.8632911392405064,
+        "mean_candidates": 12.025316455696203,
+        "median_candidates": 15.0,
+        "no_op_rate": 0.007594936708860759,
+        "replacement_token_entropy_nats": 4.888323836367867,
+        "dominant_replacement_fraction": 0.027210884353741496
+      },
+      "6.0": {
+        "at_least_one_coverage": 0.9924050632911392,
+        "at_least_four_coverage": 0.8632911392405064,
+        "mean_candidates": 12.025316455696203,
+        "median_candidates": 15.0,
+        "no_op_rate": 0.007594936708860759,
+        "replacement_token_entropy_nats": 4.888323836367867,
+        "dominant_replacement_fraction": 0.027210884353741496
+      },
+      "8.0": {
+        "at_least_one_coverage": 0.9924050632911392,
+        "at_least_four_coverage": 0.8632911392405064,
+        "mean_candidates": 12.025316455696203,
+        "median_candidates": 15.0,
+        "no_op_rate": 0.007594936708860759,
+        "replacement_token_entropy_nats": 4.888323836367867,
+        "dominant_replacement_fraction": 0.027210884353741496
+      }
+    },
+    "selected_delta_ll_smoke": 1.0,
+    "formal_threshold_locked": false,
+    "victim_queries": 0,
+    "evaluator_queries": 0,
+    "policy_gate_attack_feedback": false,
+    "final_test_used": false,
+    "gate": {
+      "status": "SMOKE_PASS",
+      "reason": "Training/evaluation is finite and the static prior yields alternatives; formal Infill Gate awaits P4."
+    }
+  },
+  "gate": {
+    "status": "SMOKE_PASS",
+    "reason": "Training/evaluation is finite and the static prior yields alternatives; formal Infill Gate awaits P4."
+  },
+  "artifacts": {
+    "checkpoint": "E:\\exp7\\runs\\next_stage\\p3_infill_pilot_v1\\best.pt",
+    "validation_json": "E:\\exp7\\reports\\next_stage\\infill_validation.json",
+    "validation_markdown": "E:\\exp7\\reports\\next_stage\\infill_validation.md"
+  },
+  "next_allowed_stage": "P4_waveform_validity",
+  "prohibited_actions": [
+    "claim formal Infill Gate from CPU smoke",
+    "use policy_gate attack outcomes for threshold selection",
+    "access final_test signal data",
+    "train PPO"
+  ]
+}

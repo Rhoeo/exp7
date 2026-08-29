@@ -1,0 +1,38 @@
+{
+  "stage": "P6_query_search_gate_v2",
+  "status": "PASS",
+  "source_count": 425,
+  "codec_joint_correct_count": 412,
+  "final_test_used": false,
+  "gate_q1": {
+    "searcher": "greedy_coordinate",
+    "query_budget": 256,
+    "searcher_valid_hard_rate": 0.14805825242718446,
+    "random_valid_hard_rate": 0.06553398058252427,
+    "difference_percentage_points": 8.25242718446602,
+    "paired_bootstrap_95ci_percentage_points": [5.825242718446602, 10.922330097087382],
+    "status": "PASS"
+  },
+  "gate_q2": {
+    "random_query_budget": 256,
+    "random_valid_hard_rate": 0.06553398058252427,
+    "searcher": "greedy_coordinate",
+    "searcher_query_budget": 128,
+    "searcher_valid_hard_rate": 0.08980582524271845,
+    "query_fraction": 0.5,
+    "status": "PASS"
+  },
+  "rates_by_query_budget": {
+    "q64": {"random": 0.0517799352750809, "greedy": 0.05825242718446602, "beam": 0.012135922330097087},
+    "q128": {"random": 0.061488673139158574, "greedy": 0.08980582524271845, "beam": 0.01699029126213592},
+    "q256": {"random": 0.06553398058252427, "greedy": 0.14805825242718446, "beam": 0.02912621359223301}
+  },
+  "validity": {
+    "evaluator_b_retention": 1.0,
+    "rf_valid_fraction": 1.0,
+    "waveform_claim": "digital-domain waveform-valid only"
+  },
+  "next_allowed_stage": "P7_specification_review_only",
+  "ppo_implementation_authorized": false,
+  "invalid_prior_run": "reports/next_stage/p6_query_gate_report_beam_growth_invalid_v0.json"
+}

@@ -1,0 +1,244 @@
+{
+  "schema_version": "rffi-next-stage-report-v1",
+  "stage": "P1_data_roles_and_policy_gate",
+  "git_commit": null,
+  "config_hash": "0013e4765d61432a7958fb774d81a3de7beeb4148500e3300a8fe175061cba13",
+  "data_split_hash": "91f138f0e6a69a16030b5f9c937b0ec3514e2d1102dbd804bca738397ed51698",
+  "checkpoint_hash": "8da705eb9096b1288c51e8ea1a79a8a5cea9ead6e684f6ed8487d124da4a5307",
+  "seeds": [
+    20260901
+  ],
+  "source_count": 425,
+  "victim_query_budget": 0,
+  "edit_budget": 0,
+  "metrics": {
+    "reward_validation_count": 8914,
+    "tokenizer_dev_count": 3000,
+    "generator_search_dev_count": 5914,
+    "buffer_count": 1779,
+    "policy_gate_per_device": 25,
+    "policy_gate_count": 425,
+    "eligibility_forward_passes_per_model": 1779,
+    "per_device": {
+      "1": {
+        "buffer": 105,
+        "victim_clean_correct": 96,
+        "evaluator_clean_correct": 103,
+        "dual_clean_correct": 95,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "4": {
+        "buffer": 108,
+        "victim_clean_correct": 108,
+        "evaluator_clean_correct": 108,
+        "dual_clean_correct": 108,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "5": {
+        "buffer": 107,
+        "victim_clean_correct": 107,
+        "evaluator_clean_correct": 107,
+        "dual_clean_correct": 107,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "6": {
+        "buffer": 97,
+        "victim_clean_correct": 77,
+        "evaluator_clean_correct": 95,
+        "dual_clean_correct": 77,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "7": {
+        "buffer": 94,
+        "victim_clean_correct": 85,
+        "evaluator_clean_correct": 93,
+        "dual_clean_correct": 84,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "8": {
+        "buffer": 96,
+        "victim_clean_correct": 96,
+        "evaluator_clean_correct": 96,
+        "dual_clean_correct": 96,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "10": {
+        "buffer": 99,
+        "victim_clean_correct": 93,
+        "evaluator_clean_correct": 99,
+        "dual_clean_correct": 93,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "11": {
+        "buffer": 105,
+        "victim_clean_correct": 25,
+        "evaluator_clean_correct": 105,
+        "dual_clean_correct": 25,
+        "selected": 25,
+        "selected_by_segment": [
+          0,
+          0,
+          25
+        ]
+      },
+      "12": {
+        "buffer": 110,
+        "victim_clean_correct": 110,
+        "evaluator_clean_correct": 110,
+        "dual_clean_correct": 110,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "15": {
+        "buffer": 105,
+        "victim_clean_correct": 105,
+        "evaluator_clean_correct": 105,
+        "dual_clean_correct": 105,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "28": {
+        "buffer": 110,
+        "victim_clean_correct": 110,
+        "evaluator_clean_correct": 110,
+        "dual_clean_correct": 110,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "30": {
+        "buffer": 95,
+        "victim_clean_correct": 86,
+        "evaluator_clean_correct": 94,
+        "dual_clean_correct": 86,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "31": {
+        "buffer": 111,
+        "victim_clean_correct": 108,
+        "evaluator_clean_correct": 111,
+        "dual_clean_correct": 108,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "40": {
+        "buffer": 108,
+        "victim_clean_correct": 105,
+        "evaluator_clean_correct": 108,
+        "dual_clean_correct": 105,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "41": {
+        "buffer": 111,
+        "victim_clean_correct": 100,
+        "evaluator_clean_correct": 111,
+        "dual_clean_correct": 100,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "43": {
+        "buffer": 110,
+        "victim_clean_correct": 110,
+        "evaluator_clean_correct": 110,
+        "dual_clean_correct": 110,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      },
+      "46": {
+        "buffer": 108,
+        "victim_clean_correct": 108,
+        "evaluator_clean_correct": 108,
+        "dual_clean_correct": 108,
+        "selected": 25,
+        "selected_by_segment": [
+          8,
+          9,
+          8
+        ]
+      }
+    }
+  },
+  "gate": {
+    "status": "PASS",
+    "reason": "Untouched buffer provides a balanced dual-clean-correct policy Gate."
+  },
+  "artifacts": {
+    "split_config": "E:\\exp7\\configs\\data\\wifib_next_stage_splits.json",
+    "source_pool": "E:\\exp7\\reports\\next_stage\\source_pool.csv",
+    "eligibility_audit": "E:\\exp7\\reports\\next_stage\\policy_gate_eligibility_audit.csv"
+  },
+  "next_allowed_stage": "P2_candidate_prior_graph",
+  "prohibited_actions": [
+    "use policy_gate attack results for P2/P3/P5a model selection",
+    "access final_test signal data",
+    "train PPO"
+  ]
+}

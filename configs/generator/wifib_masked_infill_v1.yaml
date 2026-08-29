@@ -1,0 +1,46 @@
+{
+  "schema_version": "wifib-masked-infill-v1",
+  "run_mode": "cpu_hybrid_transition_pilot",
+  "seed": 20260902,
+  "data": {
+    "token_cache": "E:\\data_cache\\rffi_v1\\tokens\\wifib_vq_p1_k1024\\tokens.npy",
+    "window_index": "E:\\data_cache\\rffi_v1\\wifib\\window_index.csv",
+    "split_config": "configs/data/wifib_next_stage_splits.json",
+    "candidate_graph": "artifacts/token_graph/wifib_vq_p1_k1024_neighbors.npz",
+    "train_role": "generator_train",
+    "validation_role": "generator_search_dev"
+  },
+  "model": {
+    "codebook_size": 1024,
+    "num_devices": 17,
+    "context_length": 256,
+    "d_model": 128,
+    "num_heads": 4,
+    "num_layers": 4,
+    "mlp_ratio": 3.0,
+    "dropout": 0.1
+  },
+  "training": {
+    "epochs": 1,
+    "batch_size": 8,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "max_train_samples": 2048,
+    "max_validation_samples": 512,
+    "neighbor_corruption_probability": 0.5,
+    "candidate_top_k": 16,
+    "transition_supported": true,
+    "transition_prior_weight": 1.0,
+    "transition_prior_alpha": 1.0,
+    "device": "cpu"
+  },
+  "candidate_probability": {
+    "delta_ll_grid": [1.0, 2.0, 4.0, 6.0, 8.0],
+    "target_at_least_one_coverage": 0.95,
+    "formal_threshold_locked": false
+  },
+  "output_dir": "runs/next_stage/p3_infill_hybrid_v2",
+  "classifier_feedback": false,
+  "policy_gate_attack_feedback": false,
+  "final_test_used": false
+}

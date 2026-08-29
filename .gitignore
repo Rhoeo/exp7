@@ -1,0 +1,40 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+*.pem
+*.key
+
+# Local data/cache/temp directories
+data/
+data_cache/
+tmp/
+
+# Large experiment binaries; JSON histories and reports under runs/ are kept
+runs/**/*.pt
+runs/**/*.pth
+runs/**/*.ckpt
+runs/**/*.npy
+
+# Logs and profiler outputs
+*.log
+*.prof
+
+# Reference papers are not redistributed through this repository
+*.pdf
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+

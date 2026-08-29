@@ -1,0 +1,33 @@
+{
+  "schema_version": "wifib-token-predictability-diagnostic-v1",
+  "source_statistics": "generator_train only",
+  "evaluation_role": "generator_search_dev",
+  "evaluation_sequences": 512,
+  "evaluation_positions": 8192,
+  "victim_queries": 0,
+  "evaluator_queries": 0,
+  "policy_gate_used": false,
+  "final_test_used": false,
+  "metrics": {
+    "unigram": {
+      "top1": 0.0018310546875,
+      "top5": 0.009765625,
+      "top16": 0.0289306640625
+    },
+    "left_bigram": {
+      "top1": 0.1295166015625,
+      "top5": 0.4681396484375,
+      "top16": 0.7806396484375
+    },
+    "right_bigram": {
+      "top1": 0.1217041015625,
+      "top5": 0.4571533203125,
+      "top16": 0.786376953125
+    },
+    "bidirectional_bigram": {
+      "top1": 0.3360595703125,
+      "top5": 0.83203125,
+      "top16": 0.980224609375
+    }
+  }
+}

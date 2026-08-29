@@ -1,0 +1,174 @@
+{
+  "checkpoint": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\best.pt",
+  "checkpoint_epoch": 5,
+  "classification": {
+    "evaluator_b": {
+      "conditional_identity_accuracy": 0.05882352963089943,
+      "correct": 1,
+      "examples": 17,
+      "per_device_accuracy": {
+        "1": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "15": 0.0,
+        "28": 0.0,
+        "30": 0.0,
+        "31": 0.0,
+        "4": 0.0,
+        "40": 0.0,
+        "41": 0.0,
+        "43": 0.0,
+        "46": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 1.0
+      },
+      "predictions": [
+        "8",
+        "1",
+        "6",
+        "8",
+        "40",
+        "8",
+        "40",
+        "8",
+        "6",
+        "4",
+        "7",
+        "15",
+        "15",
+        "8",
+        "43",
+        "40",
+        "8"
+      ]
+    },
+    "victim_a": {
+      "conditional_identity_accuracy": 0.11764705926179886,
+      "correct": 2,
+      "examples": 17,
+      "per_device_accuracy": {
+        "1": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 1.0,
+        "15": 1.0,
+        "28": 0.0,
+        "30": 0.0,
+        "31": 0.0,
+        "4": 0.0,
+        "40": 0.0,
+        "41": 0.0,
+        "43": 0.0,
+        "46": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      },
+      "predictions": [
+        "11",
+        "11",
+        "11",
+        "11",
+        "15",
+        "5",
+        "40",
+        "1",
+        "12",
+        "15",
+        "11",
+        "11",
+        "11",
+        "11",
+        "11",
+        "11",
+        "40"
+      ]
+    }
+  },
+  "conditional_generation_gate": {
+    "checks": {
+      "evaluator_conditional_identity": false,
+      "finite_iq": true,
+      "no_exact_training_duplicate": true,
+      "unique_sequences": true,
+      "victim_conditional_identity": false
+    },
+    "passed": false,
+    "thresholds": {
+      "min_evaluator_identity": 0.8,
+      "min_victim_identity": 0.5
+    }
+  },
+  "diversity": {
+    "active_codes": 1024,
+    "token_perplexity": 926.0990758158194,
+    "unique_fraction": 1.0,
+    "unique_sequences": 17
+  },
+  "labels": [
+    "1",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "10",
+    "11",
+    "12",
+    "15",
+    "28",
+    "30",
+    "31",
+    "40",
+    "41",
+    "43",
+    "46"
+  ],
+  "memorization": {
+    "exact_training_duplicates": 0,
+    "maximum_same_device_token_agreement_max": 0.0458984375,
+    "maximum_same_device_token_agreement_mean": 0.022518382352941176,
+    "nearest_candidates_per_device": 128
+  },
+  "rf_validity": {
+    "complex_power_mean": 1.0208066701889038,
+    "complex_power_std": 0.013205788098275661,
+    "finite_fraction": 1.0,
+    "papr_max": 1.7194112539291382,
+    "papr_mean": 1.6875126361846924
+  },
+  "sampling": {
+    "prefix_length": 256,
+    "prefix_sample_ids": [
+      "wifib|device=1|capture=23Jan|frame=2165|row=1891",
+      "wifib|device=4|capture=23Jan|frame=2171|row=1963",
+      "wifib|device=5|capture=23Jan|frame=2121|row=1928",
+      "wifib|device=6|capture=23Jan|frame=2221|row=1743",
+      "wifib|device=7|capture=23Jan|frame=2180|row=1697",
+      "wifib|device=8|capture=23Jan|frame=2173|row=1735",
+      "wifib|device=10|capture=23Jan|frame=2121|row=1787",
+      "wifib|device=11|capture=23Jan|frame=2184|row=1913",
+      "wifib|device=12|capture=23Jan|frame=2154|row=1981",
+      "wifib|device=15|capture=23Jan|frame=2164|row=1878",
+      "wifib|device=28|capture=23Jan|frame=2174|row=1976",
+      "wifib|device=30|capture=23Jan|frame=2172|row=1703",
+      "wifib|device=31|capture=23Jan|frame=2192|row=1996",
+      "wifib|device=40|capture=23Jan|frame=2178|row=1937",
+      "wifib|device=41|capture=23Jan|frame=2179|row=2000",
+      "wifib|device=43|capture=23Jan|frame=2186|row=1982",
+      "wifib|device=46|capture=23Jan|frame=2183|row=1970"
+    ],
+    "prefix_split": "reward_validation",
+    "samples_per_device": 1,
+    "seconds": 177.35767030715942,
+    "seed": 20260831,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "status": "complete",
+  "training_used_classifier_feedback": false
+}

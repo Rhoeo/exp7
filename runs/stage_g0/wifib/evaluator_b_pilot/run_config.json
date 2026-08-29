@@ -1,0 +1,23 @@
+{
+  "batch_size": 8,
+  "class_count": 17,
+  "cuda_version": "12.1",
+  "data_config": "configs/data/rffi_data_v1.json",
+  "dataset": "wifib",
+  "device": "auto",
+  "epochs": 1,
+  "equalized": 0,
+  "learning_rate": 0.0003,
+  "max_train_samples": 1024,
+  "max_val_samples": 512,
+  "model": "evaluator_b",
+  "num_workers": 0,
+  "output_dir": "runs\\stage_g0\\wifib\\evaluator_b_pilot",
+  "parameter_count": 299937,
+  "resolved_device": "cuda",
+  "seed": 20260828,
+  "torch_version": "2.5.1",
+  "train_examples": 1024,
+  "validation_examples": 512,
+  "weight_decay": 0.0001
+}

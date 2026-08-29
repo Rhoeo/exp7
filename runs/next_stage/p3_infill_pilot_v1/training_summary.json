@@ -1,0 +1,48 @@
+{
+  "status": "smoke_complete",
+  "run_mode": "cpu_pilot",
+  "seconds": 352.589962720871,
+  "device": "cpu",
+  "parameters": 829440,
+  "train_examples": 2048,
+  "validation_examples": 512,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 6.976166148054947,
+      "train_masked_targets": 4594,
+      "validation": {
+        "loss": 6.944952451327682,
+        "masked_targets": 1185,
+        "top1_accuracy": 0.002531645569620253,
+        "top5_accuracy": 0.010970464135021098
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 6.955841401116602,
+      "train_masked_targets": 4640,
+      "validation": {
+        "loss": 6.929036138832318,
+        "masked_targets": 1185,
+        "top1_accuracy": 0.0008438818565400844,
+        "top5_accuracy": 0.009282700421940928
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 6.946382307944252,
+      "train_masked_targets": 4612,
+      "validation": {
+        "loss": 6.927391224068429,
+        "masked_targets": 1185,
+        "top1_accuracy": 0.002531645569620253,
+        "top5_accuracy": 0.007594936708860759
+      }
+    }
+  ],
+  "best_validation_loss": 6.927391224068429,
+  "classifier_feedback": false,
+  "policy_gate_attack_feedback": false,
+  "final_test_used": false
+}

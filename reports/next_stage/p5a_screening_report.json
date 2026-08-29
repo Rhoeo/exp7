@@ -1,0 +1,3777 @@
+{
+  "schema_version": "wifib-p5a-screening-report-v1",
+  "stage": "P5a_screening",
+  "config": "E:\\exp7\\configs\\attack\\wifib_p5a_screening_v1.json",
+  "config_sha256": "bb843764594711b63653fd2199df18cb2af45b5c1eb2eb4b666a0af452526d2b",
+  "source_role": "generator_search_dev",
+  "source_count": 170,
+  "source_condition": "dual-clean-correct on raw clean; attack denominator additionally codec-correct",
+  "policy_gate_used": false,
+  "final_test_used": false,
+  "victim_access": "score-based logits/margin only",
+  "evaluator_b_access": "offline final audit only",
+  "eligibility_forward_passes_per_model": 5914,
+  "candidate_search_queries_total": 35671,
+  "position_preranking_uses_victim": false,
+  "results": {
+    "random_uniform_plausible": {
+      "q0": {
+        "2": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 2,
+          "realized_edit_count_mean": 1.888235294117647,
+          "realized_full_fraction": 0.8941176470588236,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.002634685719385743,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 52.86418914794922,
+              "min": 46.75445556640625,
+              "p50": 52.39308166503906,
+              "p95": 57.152076721191406,
+              "max": 120.0,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 6.7638911787071265e-06,
+              "min": 0.0,
+              "p50": 5.763577064499259e-06,
+              "p95": 1.5266075934050605e-05,
+              "max": 2.1113208276801743e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.002483578398823738,
+              "min": 0.0,
+              "p50": 0.002400744706392288,
+              "p95": 0.0039071799255907536,
+              "max": 0.004594911355525255,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 943.627197265625,
+              "min": 0.0,
+              "p50": 928.655517578125,
+              "p95": 1286.3887939453125,
+              "max": 1286.997314453125,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.725044846534729,
+              "min": 1.6950322389602661,
+              "p50": 1.7266030311584473,
+              "p95": 1.7373629808425903,
+              "max": 1.7873871326446533,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.07630157470703125,
+              "min": 9.996712485582648e-11,
+              "p50": 0.07565514743328094,
+              "p95": 0.11805785447359085,
+              "max": 0.14050348103046417,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999966025352478,
+              "min": 0.99998939037323,
+              "p50": 0.9999971389770508,
+              "p95": 0.9999989867210388,
+              "max": 1.0000001192092896,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.001109737204387784,
+              "min": 0.0,
+              "p50": 0.001088065910153091,
+              "p95": 0.001688747899606824,
+              "max": 0.001978785265237093,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.000570748234167695,
+              "min": 0.000379627279471606,
+              "p50": 0.0005441746907308698,
+              "p95": 0.0008043640991672873,
+              "max": 0.000878026126883924,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52368927001953,
+              "min": -34.206424713134766,
+              "p50": -32.64265060424805,
+              "p95": -30.945472717285156,
+              "max": -30.564926147460938,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 6.061758039965781e-11,
+              "min": 0.0,
+              "p50": 4.4142595828633446e-11,
+              "p95": 1.3472700732819476e-10,
+              "max": 6.459630608190992e-10,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.169426679611206,
+              "min": 1.1012197732925415,
+              "p50": 1.176734447479248,
+              "p95": 1.2184268236160278,
+              "max": 1.249718189239502,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.04964657872915268,
+              "min": 9.996712485582648e-11,
+              "p50": 0.049230530858039856,
+              "p95": 0.07677184045314789,
+              "max": 0.09352351725101471,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "8": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 8,
+          "realized_edit_count_mean": 7.58235294117647,
+          "realized_full_fraction": 0.6411764705882353,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": -0.0019148745341226459,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 45.996768951416016,
+              "min": 42.636714935302734,
+              "p50": 46.07096481323242,
+              "p95": 47.825740814208984,
+              "max": 49.36412048339844,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 2.6165562303503975e-05,
+              "min": 1.157678707386367e-05,
+              "p50": 2.4711775040486827e-05,
+              "p95": 4.019537300337106e-05,
+              "max": 5.4491498303832486e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.005063921678811312,
+              "min": 0.0034024678170681,
+              "p50": 0.004971092566847801,
+              "p95": 0.0063399807550013065,
+              "max": 0.007381835486739874,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 402.1215515136719,
+              "min": 235.74398803710938,
+              "p50": 383.9237060546875,
+              "p95": 570.2391967773438,
+              "max": 704.9122924804688,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7273496389389038,
+              "min": 1.6930381059646606,
+              "p50": 1.7294957637786865,
+              "p95": 1.744526982307434,
+              "max": 1.7713260650634766,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.10104416310787201,
+              "min": 0.0667591243982315,
+              "p50": 0.09891220182180405,
+              "p95": 0.13516640663146973,
+              "max": 0.15517689287662506,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999868869781494,
+              "min": 0.9999727010726929,
+              "p50": 0.9999876022338867,
+              "p95": 0.999991774559021,
+              "max": 0.9999942183494568,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0021574017591774464,
+              "min": 0.0014311065897345543,
+              "p50": 0.0021143504418432713,
+              "p95": 0.002706370549276471,
+              "max": 0.0032373331487178802,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707535892724991,
+              "min": 0.00037963068461976945,
+              "p50": 0.0005441807443276048,
+              "p95": 0.0008043758571147919,
+              "max": 0.0008780305506661534,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.523651123046875,
+              "min": -34.20638656616211,
+              "p50": -32.642601013183594,
+              "p95": -30.945409774780273,
+              "max": -30.564903259277344,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 1.114288002146413e-11,
+              "min": 5.171788344804362e-12,
+              "p50": 1.0657153978743672e-11,
+              "p95": 1.663955952191376e-11,
+              "max": 2.3656429246066146e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1694681644439697,
+              "min": 1.1008425951004028,
+              "p50": 1.1767849922180176,
+              "p95": 1.21747887134552,
+              "max": 1.2489725351333618,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.0665314719080925,
+              "min": 0.043504249304533005,
+              "p50": 0.06429757922887802,
+              "p95": 0.09144273400306702,
+              "max": 0.11291904002428055,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "16": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 16,
+          "realized_edit_count_mean": 15.258823529411766,
+          "realized_full_fraction": 0.4823529411764706,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.004499684553593397,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 42.90331268310547,
+              "min": 40.75602722167969,
+              "p50": 42.87556457519531,
+              "p95": 44.616615295410156,
+              "max": 45.267921447753906,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 5.249906826065853e-05,
+              "min": 2.9730877940892242e-05,
+              "p50": 5.157579653314315e-05,
+              "p95": 7.226284651551396e-05,
+              "max": 8.402282401220873e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.007202443666756153,
+              "min": 0.005452602636069059,
+              "p50": 0.007181619293987751,
+              "p95": 0.008500753901898861,
+              "max": 0.009166396223008633,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 238.49232482910156,
+              "min": 147.6537628173828,
+              "p50": 227.83895874023438,
+              "p95": 343.635009765625,
+              "max": 478.06439208984375,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7318732738494873,
+              "min": 1.684625267982483,
+              "p50": 1.7312818765640259,
+              "p95": 1.7685284614562988,
+              "max": 1.792565941810608,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.11029256880283356,
+              "min": 0.0768502727150917,
+              "p50": 0.10893471539020538,
+              "p95": 0.1407160758972168,
+              "max": 0.15193241834640503,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.999973714351654,
+              "min": 0.9999580383300781,
+              "p50": 0.999974250793457,
+              "p95": 0.9999827146530151,
+              "max": 0.9999850988388062,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0030588423833251,
+              "min": 0.0023723142221570015,
+              "p50": 0.003044241340830922,
+              "p95": 0.0036110884975641966,
+              "max": 0.003975138999521732,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707605159841478,
+              "min": 0.0003796315286308527,
+              "p50": 0.0005441848188638687,
+              "p95": 0.0008043837151490152,
+              "max": 0.0008780399803072214,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.523597717285156,
+              "min": -34.20637512207031,
+              "p50": -32.64257049560547,
+              "p95": -30.94536590576172,
+              "max": -30.564857482910156,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 5.384275490738499e-12,
+              "min": 3.2359334396075967e-12,
+              "p50": 5.157193248839231e-12,
+              "p95": 7.869890503164889e-12,
+              "max": 9.259455181764853e-12,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.170241355895996,
+              "min": 1.0996952056884766,
+              "p50": 1.1781549453735352,
+              "p95": 1.2171250581741333,
+              "max": 1.250005841255188,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.07351937890052795,
+              "min": 0.04997182637453079,
+              "p50": 0.07185758650302887,
+              "p95": 0.09250328689813614,
+              "max": 0.10256809741258621,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        }
+      }
+    },
+    "random_nearest": {
+      "q0": {
+        "2": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 2,
+          "realized_edit_count_mean": 1.888235294117647,
+          "realized_full_fraction": 0.8941176470588236,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.0008798395283520222,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 55.76829528808594,
+              "min": 48.621212005615234,
+              "p50": 55.6229248046875,
+              "p95": 58.854026794433594,
+              "max": 120.0,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 3.363043788340292e-06,
+              "min": 0.0,
+              "p50": 2.7397686608310323e-06,
+              "p95": 6.9665402406826615e-06,
+              "max": 1.3736595974478405e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.0017575635574758053,
+              "min": 0.0,
+              "p50": 0.0016552186571061611,
+              "p95": 0.0026394203305244446,
+              "max": 0.0037062913179397583,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 870.389892578125,
+              "min": 0.0,
+              "p50": 832.650146484375,
+              "p95": 1286.717529296875,
+              "max": 1286.997314453125,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7244765758514404,
+              "min": 1.6948984861373901,
+              "p50": 1.725980520248413,
+              "p95": 1.7365338802337646,
+              "max": 1.749557614326477,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.05187300592660904,
+              "min": 9.996712485582648e-11,
+              "p50": 0.048638589680194855,
+              "p95": 0.08576275408267975,
+              "max": 0.11790847778320312,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999982714653015,
+              "min": 0.9999932050704956,
+              "p50": 0.9999986886978149,
+              "p95": 0.9999994039535522,
+              "max": 1.0000001192092896,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0007759970030747354,
+              "min": 0.0,
+              "p50": 0.000723975826986134,
+              "p95": 0.0012008482590317726,
+              "max": 0.0016229149186983705,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707472446374595,
+              "min": 0.0003796264936681837,
+              "p50": 0.0005441735265776515,
+              "p95": 0.0008043642737902701,
+              "max": 0.0008780218777246773,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52369689941406,
+              "min": -34.20643615722656,
+              "p50": -32.642662048339844,
+              "p95": -30.945470809936523,
+              "max": -30.5649471282959,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 1.0834638047851897e-10,
+              "min": 0.0,
+              "p50": 9.819794283272287e-11,
+              "p95": 1.9755889979489183e-10,
+              "max": 6.459630608190992e-10,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1693971157073975,
+              "min": 1.1011731624603271,
+              "p50": 1.1770819425582886,
+              "p95": 1.2185423374176025,
+              "max": 1.2494657039642334,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.033728718757629395,
+              "min": 9.996712485582648e-11,
+              "p50": 0.031600549817085266,
+              "p95": 0.05565473437309265,
+              "max": 0.07664793729782104,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "8": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 8,
+          "realized_edit_count_mean": 7.58235294117647,
+          "realized_full_fraction": 0.6411764705882353,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.0014500243123620749,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 48.979103088378906,
+              "min": 45.0606575012207,
+              "p50": 49.05186080932617,
+              "p95": 50.81098937988281,
+              "max": 51.93852233886719,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 1.3259241313789971e-05,
+              "min": 6.399523044819944e-06,
+              "p50": 1.244017494173022e-05,
+              "p95": 2.166961166949477e-05,
+              "max": 3.118417225778103e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.003598241601139307,
+              "min": 0.0025297277607023716,
+              "p50": 0.0035270373336970806,
+              "p95": 0.004655063152313232,
+              "max": 0.005584279075264931,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 390.64691162109375,
+              "min": 226.71324157714844,
+              "p50": 358.81231689453125,
+              "p95": 644.4236450195312,
+              "max": 809.7461547851562,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7252455949783325,
+              "min": 1.6944313049316406,
+              "p50": 1.7274675369262695,
+              "p95": 1.7380297183990479,
+              "max": 1.7502082586288452,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.07103627920150757,
+              "min": 0.04183083772659302,
+              "p50": 0.06547810137271881,
+              "p95": 0.11085937917232513,
+              "max": 0.1324547976255417,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999933838844299,
+              "min": 0.9999843835830688,
+              "p50": 0.9999938011169434,
+              "p95": 0.9999958872795105,
+              "max": 0.9999968409538269,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0015314256306737661,
+              "min": 0.0010882457718253136,
+              "p50": 0.001508839544840157,
+              "p95": 0.0019516951870173216,
+              "max": 0.0023417985066771507,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707499803975224,
+              "min": 0.0003796270757447928,
+              "p50": 0.0005441742250695825,
+              "p95": 0.0008043660782277584,
+              "max": 0.000878024788107723,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52367401123047,
+              "min": -34.20642852783203,
+              "p50": -32.64265441894531,
+              "p95": -30.945463180541992,
+              "max": -30.56493377685547,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 2.2450817246943977e-11,
+              "min": 8.773958122543224e-12,
+              "p50": 2.1844543535154415e-11,
+              "p95": 3.439442480823729e-11,
+              "max": 4.251603236138379e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1693203449249268,
+              "min": 1.101248025894165,
+              "p50": 1.1766729354858398,
+              "p95": 1.2178561687469482,
+              "max": 1.2496227025985718,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.04650592431426048,
+              "min": 0.02720751240849495,
+              "p50": 0.0425039604306221,
+              "p95": 0.07210493087768555,
+              "max": 0.08673417568206787,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "16": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 16,
+          "realized_edit_count_mean": 15.258823529411766,
+          "realized_full_fraction": 0.4823529411764706,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.0061012152582407,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 45.892269134521484,
+              "min": 43.41814422607422,
+              "p50": 45.91807556152344,
+              "p95": 47.397220611572266,
+              "max": 48.24236297607422,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 2.6367555619799532e-05,
+              "min": 1.4988691873440985e-05,
+              "p50": 2.55977465712931e-05,
+              "p95": 3.763217318919487e-05,
+              "max": 4.5518230763264e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.00510447146371007,
+              "min": 0.0038715233094990253,
+              "p50": 0.005059394985437393,
+              "p95": 0.006134498864412308,
+              "max": 0.006746720056980848,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 255.39236450195312,
+              "min": 117.87701416015625,
+              "p50": 238.5481719970703,
+              "p95": 393.9808349609375,
+              "max": 651.2188720703125,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7270727157592773,
+              "min": 1.6941474676132202,
+              "p50": 1.7300353050231934,
+              "p95": 1.7434744834899902,
+              "max": 1.7543011903762817,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.08110684156417847,
+              "min": 0.050335921347141266,
+              "p50": 0.0782577320933342,
+              "p95": 0.11508629471063614,
+              "max": 0.14822690188884735,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999868273735046,
+              "min": 0.999977171421051,
+              "p50": 0.9999871850013733,
+              "p95": 0.9999908804893494,
+              "max": 0.9999924898147583,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0021650977432727814,
+              "min": 0.001602250267751515,
+              "p50": 0.0021508270874619484,
+              "p95": 0.0025854844134300947,
+              "max": 0.0028656551148742437,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707532400265336,
+              "min": 0.00037962806527502835,
+              "p50": 0.0005441780667752028,
+              "p95": 0.000804373063147068,
+              "max": 0.0008780276984907687,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.523651123046875,
+              "min": -34.206417083740234,
+              "p50": -32.64262390136719,
+              "p95": -30.945425033569336,
+              "max": -30.564918518066406,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 1.0721958043635738e-11,
+              "min": 5.7672078918047376e-12,
+              "p50": 1.0624940163794783e-11,
+              "p95": 1.4884466922882034e-11,
+              "max": 1.798542217934518e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.169445514678955,
+              "min": 1.09968101978302,
+              "p50": 1.1776564121246338,
+              "p95": 1.2178542613983154,
+              "max": 1.2495900392532349,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.05366344377398491,
+              "min": 0.03274418041110039,
+              "p50": 0.05153965950012207,
+              "p95": 0.0759509801864624,
+              "max": 0.0975218191742897,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        }
+      }
+    },
+    "random_infill": {
+      "q0": {
+        "2": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 2,
+          "realized_edit_count_mean": 1.888235294117647,
+          "realized_full_fraction": 0.8941176470588236,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.0004373796400614083,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 53.85715103149414,
+              "min": 48.23564910888672,
+              "p50": 53.213253021240234,
+              "p95": 57.85744094848633,
+              "max": 120.0,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 5.293392405292252e-06,
+              "min": 0.0,
+              "p50": 4.77189587400062e-06,
+              "p95": 1.160398096544668e-05,
+              "max": 1.5011884897830896e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.002204548567533493,
+              "min": 0.0,
+              "p50": 0.002184446668252349,
+              "p95": 0.0034062941558659077,
+              "max": 0.0038745172787457705,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 917.8836669921875,
+              "min": 0.0,
+              "p50": 907.8992919921875,
+              "p95": 1286.552490234375,
+              "max": 1286.997314453125,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7244359254837036,
+              "min": 1.695013403892517,
+              "p50": 1.7259199619293213,
+              "p95": 1.73689866065979,
+              "max": 1.752668023109436,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.0666889026761055,
+              "min": 9.996712485582648e-11,
+              "p50": 0.0637049525976181,
+              "p95": 0.10598961263895035,
+              "max": 0.11951610445976257,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999973773956299,
+              "min": 0.9999924898147583,
+              "p50": 0.999997615814209,
+              "p95": 0.9999992251396179,
+              "max": 1.0000001192092896,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0009786956943571568,
+              "min": 0.0,
+              "p50": 0.0009610870620235801,
+              "p95": 0.0014840351650491357,
+              "max": 0.0017301543848589063,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707475356757641,
+              "min": 0.0003796264063566923,
+              "p50": 0.000544173875823617,
+              "p95": 0.0008043657289817929,
+              "max": 0.0008780238567851484,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52369689941406,
+              "min": -34.20643615722656,
+              "p50": -32.64265823364258,
+              "p95": -30.945465087890625,
+              "max": -30.564937591552734,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 7.404962754087308e-11,
+              "min": 0.0,
+              "p50": 5.595816865433534e-11,
+              "p95": 1.6160271731902043e-10,
+              "max": 6.459630608190992e-10,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1694238185882568,
+              "min": 1.1011922359466553,
+              "p50": 1.1766371726989746,
+              "p95": 1.2184418439865112,
+              "max": 1.2495923042297363,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.043364230543375015,
+              "min": 9.996712485582648e-11,
+              "p50": 0.04137228801846504,
+              "p95": 0.069045290350914,
+              "max": 0.07756537199020386,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "8": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 8,
+          "realized_edit_count_mean": 7.58235294117647,
+          "realized_full_fraction": 0.6411764705882353,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": -0.00011855101183755323,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 46.97940444946289,
+              "min": 44.20357131958008,
+              "p50": 46.93290710449219,
+              "p95": 49.105960845947266,
+              "max": 50.16920471191406,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 2.08850087801693e-05,
+              "min": 9.61787736741826e-06,
+              "p50": 2.026324364123866e-05,
+              "p95": 3.101125548710115e-05,
+              "max": 3.7987687392160296e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.004524026066064835,
+              "min": 0.00310127018019557,
+              "p50": 0.004501471295952797,
+              "p95": 0.0055687627755105495,
+              "max": 0.006163415033370256,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 404.2841796875,
+              "min": 226.82070922851562,
+              "p50": 391.55352783203125,
+              "p95": 586.7111206054688,
+              "max": 727.5711669921875,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7258611917495728,
+              "min": 1.6937696933746338,
+              "p50": 1.727554202079773,
+              "p95": 1.7387183904647827,
+              "max": 1.7563529014587402,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.0904623493552208,
+              "min": 0.057439759373664856,
+              "p50": 0.0907183438539505,
+              "p95": 0.11972232162952423,
+              "max": 0.1413058638572693,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999895691871643,
+              "min": 0.9999810457229614,
+              "p50": 0.9999898672103882,
+              "p95": 0.9999939799308777,
+              "max": 0.9999951720237732,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0019344056490808725,
+              "min": 0.0013318159617483616,
+              "p50": 0.0019286662572994828,
+              "p95": 0.0023729177191853523,
+              "max": 0.0026348039973527193,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707509117200971,
+              "min": 0.00037962893838994205,
+              "p50": 0.0005441759712994099,
+              "p95": 0.0008043706766329706,
+              "max": 0.0008780291536822915,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52367401123047,
+              "min": -34.20640563964844,
+              "p50": -32.64263916015625,
+              "p95": -30.945438385009766,
+              "max": -30.564910888671875,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 1.3958864446272923e-11,
+              "min": 6.82198698573333e-12,
+              "p50": 1.3541260127092336e-11,
+              "p95": 2.179671027002783e-11,
+              "max": 2.8984759037342656e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.169485330581665,
+              "min": 1.1008803844451904,
+              "p50": 1.1766688823699951,
+              "p95": 1.2173550128936768,
+              "max": 1.2503294944763184,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.05949152261018753,
+              "min": 0.03749697282910347,
+              "p50": 0.059494923800230026,
+              "p95": 0.07918152213096619,
+              "max": 0.09210770577192307,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "16": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 16,
+          "realized_edit_count_mean": 15.258823529411766,
+          "realized_full_fraction": 0.4823529411764706,
+          "search_queries_mean": 0.0,
+          "search_queries_max": 0,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.0038295872509479523,
+          "victim_fool_rate_on_codec_correct": 0.0,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0,
+          "valid_hard_rate_macro": 0.0,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 43.941471099853516,
+              "min": 41.24037170410156,
+              "p50": 43.89596939086914,
+              "p95": 45.48495101928711,
+              "max": 46.322975158691406,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 4.128044383833185e-05,
+              "min": 2.3318594685406424e-05,
+              "p50": 4.0775859815767035e-05,
+              "p95": 5.758570114267059e-05,
+              "max": 7.515583274653181e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.006388486362993717,
+              "min": 0.004828933160752058,
+              "p50": 0.006385597866028547,
+              "p95": 0.00758849224075675,
+              "max": 0.00866924598813057,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 244.96128845214844,
+              "min": 140.76397705078125,
+              "p50": 232.26336669921875,
+              "p95": 360.9494323730469,
+              "max": 579.4227905273438,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7281056642532349,
+              "min": 1.693719744682312,
+              "p50": 1.729683756828308,
+              "p95": 1.745606541633606,
+              "max": 1.779691457748413,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.09925094991922379,
+              "min": 0.06664639711380005,
+              "p50": 0.09766465425491333,
+              "p95": 0.1276998221874237,
+              "max": 0.14843657612800598,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999793767929077,
+              "min": 0.999962568283081,
+              "p50": 0.9999796152114868,
+              "p95": 0.999985933303833,
+              "max": 0.999988317489624,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.002713660476729274,
+              "min": 0.002072406467050314,
+              "p50": 0.0027236908208578825,
+              "p95": 0.0032179837580770254,
+              "max": 0.0035107838921248913,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.000570754986256361,
+              "min": 0.0003796316450461745,
+              "p50": 0.0005441796965897083,
+              "p95": 0.0008043792913667858,
+              "max": 0.0008780317148193717,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52363967895508,
+              "min": -34.20637512207031,
+              "p50": -32.64261245727539,
+              "p95": -30.945390701293945,
+              "max": -30.564897537231445,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 6.847738522053337e-12,
+              "min": 3.4156078573127635e-12,
+              "p50": 6.71931434104156e-12,
+              "p95": 9.572749710973216e-12,
+              "max": 1.1073568277619739e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1697967052459717,
+              "min": 1.0999726057052612,
+              "p50": 1.1776386499404907,
+              "p95": 1.2172881364822388,
+              "max": 1.2500691413879395,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.0661134198307991,
+              "min": 0.04350406676530838,
+              "p50": 0.06494054943323135,
+              "p95": 0.08528818935155869,
+              "max": 0.09742428362369537,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        }
+      }
+    },
+    "greedy_infill": {
+      "q64": {
+        "2": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 2,
+          "realized_edit_count_mean": 2.0,
+          "realized_full_fraction": 1.0,
+          "search_queries_mean": 54.21176470588235,
+          "search_queries_max": 64,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.10847058147192001,
+          "victim_fool_rate_on_codec_correct": 0.018867924528301886,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.018867924528301886,
+          "valid_hard_rate_macro": 0.019771241830065362,
+          "valid_hard_bootstrap_95ci": [
+            0.0,
+            0.0440251572327044
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1111111111111111,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 47.52798080444336,
+              "min": 44.22427749633789,
+              "p50": 47.277122497558594,
+              "p95": 50.098079681396484,
+              "max": 54.19137954711914,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 1.870840605988633e-05,
+              "min": 3.809449935943121e-06,
+              "p50": 1.8719223589869216e-05,
+              "p95": 2.8220818421687e-05,
+              "max": 3.780699262279086e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.004266855772584677,
+              "min": 0.0019517812179401517,
+              "p50": 0.004326571710407734,
+              "p95": 0.005312326364219189,
+              "max": 0.006148739252239466,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 811.9812622070312,
+              "min": 612.4673461914062,
+              "p50": 781.9234619140625,
+              "p95": 1026.3433837890625,
+              "max": 1183.889404296875,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7249574661254883,
+              "min": 1.6952054500579834,
+              "p50": 1.7262260913848877,
+              "p95": 1.7361093759536743,
+              "max": 1.774717092514038,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.12102439999580383,
+              "min": 0.04954762011766434,
+              "p50": 0.11990068852901459,
+              "p95": 0.1534484177827835,
+              "max": 0.18732328712940216,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999905824661255,
+              "min": 0.9999812245368958,
+              "p50": 0.9999905824661255,
+              "p95": 0.9999951124191284,
+              "max": 0.9999980926513672,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0018684358801692724,
+              "min": 0.000815671868622303,
+              "p50": 0.0018811108311638236,
+              "p95": 0.0023924580309540033,
+              "max": 0.002859686268493533,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707500968128443,
+              "min": 0.000379628298105672,
+              "p50": 0.0005441757384687662,
+              "p95": 0.0008043645648285747,
+              "max": 0.0008780283969826996,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52367401123047,
+              "min": -34.20641326904297,
+              "p50": -32.642642974853516,
+              "p95": -30.945470809936523,
+              "max": -30.56491470336914,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 1.6475345393507368e-11,
+              "min": 6.8263142534441545e-12,
+              "p50": 1.4310375801018793e-11,
+              "p95": 2.8108848582064638e-11,
+              "max": 7.770389193195726e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.169851303100586,
+              "min": 1.105984091758728,
+              "p50": 1.1768120527267456,
+              "p95": 1.2192397117614746,
+              "max": 1.2669696807861328,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.08031141012907028,
+              "min": 0.032234448939561844,
+              "p50": 0.0790034607052803,
+              "p95": 0.10605251789093018,
+              "max": 0.14244790375232697,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "8": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 8,
+          "realized_edit_count_mean": 7.970588235294118,
+          "realized_full_fraction": 0.9705882352941176,
+          "search_queries_mean": 54.21176470588235,
+          "search_queries_max": 64,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.18857920169830322,
+          "victim_fool_rate_on_codec_correct": 0.03773584905660377,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.03773584905660377,
+          "valid_hard_rate_macro": 0.038888888888888896,
+          "valid_hard_bootstrap_95ci": [
+            0.012578616352201259,
+            0.06918238993710692
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1111111111111111,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 42.00481414794922,
+              "min": 39.90153121948242,
+              "p50": 41.99432373046875,
+              "p95": 43.599056243896484,
+              "max": 44.96492004394531,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 6.444483005907387e-05,
+              "min": 3.187924448866397e-05,
+              "p50": 6.317839142866433e-05,
+              "p95": 8.85300905792974e-05,
+              "max": 0.00010229323379462585,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.0079836780205369,
+              "min": 0.00564617058262229,
+              "p50": 0.007948480546474457,
+              "p95": 0.009409031830728054,
+              "max": 0.010114011354744434,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 312.9309387207031,
+              "min": 197.2074432373047,
+              "p50": 306.572021484375,
+              "p95": 434.7372741699219,
+              "max": 539.5772094726562,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.732298493385315,
+              "min": 1.6985061168670654,
+              "p50": 1.7306365966796875,
+              "p95": 1.771031141281128,
+              "max": 1.8792225122451782,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.14004504680633545,
+              "min": 0.10258913040161133,
+              "p50": 0.13786421716213226,
+              "p95": 0.17333076894283295,
+              "max": 0.1910235583782196,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999676942825317,
+              "min": 0.9999487996101379,
+              "p50": 0.999968409538269,
+              "p95": 0.9999781250953674,
+              "max": 0.9999841451644897,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0034358438570052385,
+              "min": 0.0022807526402175426,
+              "p50": 0.003415096551179886,
+              "p95": 0.0041127256117761135,
+              "max": 0.00437060184776783,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707580130547285,
+              "min": 0.0003796324017457664,
+              "p50": 0.000544181908480823,
+              "p95": 0.0008043725392781198,
+              "max": 0.0008780395146459341,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.523616790771484,
+              "min": -34.20636749267578,
+              "p50": -32.64259338378906,
+              "p95": -30.9454288482666,
+              "max": -30.56485939025879,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 4.391113774676603e-12,
+              "min": 2.3698443381292567e-12,
+              "p50": 4.210519953529168e-12,
+              "p95": 6.33426557733463e-12,
+              "max": 8.676015635089573e-12,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1721409559249878,
+              "min": 1.1058151721954346,
+              "p50": 1.176201581954956,
+              "p95": 1.2237550020217896,
+              "max": 1.3030675649642944,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.10223884880542755,
+              "min": 0.06669943779706955,
+              "p50": 0.0979955792427063,
+              "p95": 0.14277762174606323,
+              "max": 0.17594096064567566,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "16": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 16,
+          "realized_edit_count_mean": 11.588235294117647,
+          "realized_full_fraction": 0.01764705882352941,
+          "search_queries_mean": 54.21176470588235,
+          "search_queries_max": 64,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.2002202421426773,
+          "victim_fool_rate_on_codec_correct": 0.03773584905660377,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.03773584905660377,
+          "valid_hard_rate_macro": 0.038888888888888896,
+          "valid_hard_bootstrap_95ci": [
+            0.012578616352201259,
+            0.06918238993710692
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1111111111111111,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 40.80131149291992,
+              "min": 37.530635833740234,
+              "p50": 40.7158203125,
+              "p95": 42.786643981933594,
+              "max": 44.96492004394531,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 8.649662777315825e-05,
+              "min": 3.187924448866397e-05,
+              "p50": 8.480444375891238e-05,
+              "p95": 0.00012987937952857465,
+              "max": 0.00017657791613601148,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.009210065938532352,
+              "min": 0.00564617058262229,
+              "p50": 0.009208929724991322,
+              "p95": 0.011396418325603008,
+              "max": 0.01328826230019331,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 251.46185302734375,
+              "min": 127.2621078491211,
+              "p50": 243.43287658691406,
+              "p95": 359.0605163574219,
+              "max": 539.5772094726562,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7353030443191528,
+              "min": 1.6976038217544556,
+              "p50": 1.7318800687789917,
+              "p95": 1.79220449924469,
+              "max": 1.879221796989441,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.14339639246463776,
+              "min": 0.10258639603853226,
+              "p50": 0.1406394988298416,
+              "p95": 0.1773802936077118,
+              "max": 0.19098620116710663,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999567270278931,
+              "min": 0.9999117255210876,
+              "p50": 0.9999575614929199,
+              "p95": 0.999973714351654,
+              "max": 0.9999841451644897,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.003956486936658621,
+              "min": 0.0022807526402175426,
+              "p50": 0.003946731798350811,
+              "p95": 0.004875009413808584,
+              "max": 0.005581974983215332,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707619129680097,
+              "min": 0.0003796324017457664,
+              "p50": 0.0005441914545372128,
+              "p95": 0.0008043884299695492,
+              "max": 0.0008780518546700478,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.523590087890625,
+              "min": -34.20636749267578,
+              "p50": -32.64251708984375,
+              "p95": -30.945343017578125,
+              "max": -30.564800262451172,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 3.39682492203619e-12,
+              "min": 1.5731312736841363e-12,
+              "p50": 3.2076216682774827e-12,
+              "p95": 5.097412509452726e-12,
+              "max": 8.676015635089573e-12,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1735988855361938,
+              "min": 1.1056931018829346,
+              "p50": 1.175934076309204,
+              "p95": 1.230817437171936,
+              "max": 1.303329348564148,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.10727182030677795,
+              "min": 0.06673812121152878,
+              "p50": 0.10159468650817871,
+              "p95": 0.14579473435878754,
+              "max": 0.2003657966852188,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        }
+      },
+      "q256": {
+        "2": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 2,
+          "realized_edit_count_mean": 2.0,
+          "realized_full_fraction": 1.0,
+          "search_queries_mean": 209.8294117647059,
+          "search_queries_max": 241,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.22258952260017395,
+          "victim_fool_rate_on_codec_correct": 0.0440251572327044,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.0440251572327044,
+          "valid_hard_rate_macro": 0.04934640522875817,
+          "valid_hard_bootstrap_95ci": [
+            0.012578616352201259,
+            0.07547169811320754
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1111111111111111,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1111111111111111,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.125,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.16666666666666666,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 47.36434555053711,
+              "min": 43.677337646484375,
+              "p50": 47.01811218261719,
+              "p95": 50.042755126953125,
+              "max": 52.6697998046875,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 1.9422239347477444e-05,
+              "min": 5.407788648881251e-06,
+              "p50": 1.986957977351267e-05,
+              "p95": 2.954641058749985e-05,
+              "max": 4.288111085770652e-05,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.004346935078501701,
+              "min": 0.002325465204194188,
+              "p50": 0.004457529634237289,
+              "p95": 0.005435660947114229,
+              "max": 0.006548366975039244,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 820.1675415039062,
+              "min": 645.2984619140625,
+              "p50": 804.1566162109375,
+              "p95": 1047.2681884765625,
+              "max": 1142.9925537109375,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7246956825256348,
+              "min": 1.6946930885314941,
+              "p50": 1.72633957862854,
+              "p95": 1.7364596128463745,
+              "max": 1.7645350694656372,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.12395384162664413,
+              "min": 0.061834774911403656,
+              "p50": 0.12388359010219574,
+              "p95": 0.15421845018863678,
+              "max": 0.2054237723350525,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999902844429016,
+              "min": 0.9999786019325256,
+              "p50": 0.9999900460243225,
+              "p95": 0.9999950528144836,
+              "max": 0.9999972581863403,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.0019090855494141579,
+              "min": 0.0009932608809322119,
+              "p50": 0.0019215578213334084,
+              "p95": 0.0023765719961375,
+              "max": 0.0033603820484131575,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707499803975224,
+              "min": 0.0003796282398980111,
+              "p50": 0.0005441753892228007,
+              "p95": 0.0008043662528507411,
+              "max": 0.0008780304342508316,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52367401123047,
+              "min": -34.20641326904297,
+              "p50": -32.64264678955078,
+              "p95": -30.945463180541992,
+              "max": -30.564903259277344,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 1.567243904099236e-11,
+              "min": 6.050081876457503e-12,
+              "p50": 1.3936352072363434e-11,
+              "p95": 2.7206223385256578e-11,
+              "max": 5.114899823133179e-11,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1699073314666748,
+              "min": 1.1018540859222412,
+              "p50": 1.1774427890777588,
+              "p95": 1.2242004871368408,
+              "max": 1.2681394815444946,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.08208486437797546,
+              "min": 0.040759582072496414,
+              "p50": 0.08187498152256012,
+              "p95": 0.10349635779857635,
+              "max": 0.16194374859333038,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "8": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 8,
+          "realized_edit_count_mean": 8.0,
+          "realized_full_fraction": 1.0,
+          "search_queries_mean": 209.8294117647059,
+          "search_queries_max": 241,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.4899635910987854,
+          "victim_fool_rate_on_codec_correct": 0.11320754716981132,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.11320754716981132,
+          "valid_hard_rate_macro": 0.12042483660130718,
+          "valid_hard_bootstrap_95ci": [
+            0.06918238993710692,
+            0.16981132075471697
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 3,
+              "valid_hard_rate": 0.3,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 3,
+              "valid_hard_rate": 0.375,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.2222222222222222,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1111111111111111,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.25,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.16666666666666666,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.2,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.2222222222222222,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 41.547237396240234,
+              "min": 39.47351837158203,
+              "p50": 41.561790466308594,
+              "p95": 43.10618209838867,
+              "max": 43.83665466308594,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 7.176369399530813e-05,
+              "min": 4.133654874749482e-05,
+              "p50": 6.979491445235908e-05,
+              "p95": 0.00010109638969879597,
+              "max": 0.00011288815585430712,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.008419819176197052,
+              "min": 0.006429350469261408,
+              "p50": 0.008354321122169495,
+              "p95": 0.010054386220872402,
+              "max": 0.010624883696436882,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 293.9335632324219,
+              "min": 186.68959045410156,
+              "p50": 283.9384765625,
+              "p95": 406.51708984375,
+              "max": 578.22314453125,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.730549931526184,
+              "min": 1.6950353384017944,
+              "p50": 1.7304455041885376,
+              "p95": 1.7659541368484497,
+              "max": 1.8341305255889893,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.14313572645187378,
+              "min": 0.10289881378412247,
+              "p50": 0.14119961857795715,
+              "p95": 0.17601901292800903,
+              "max": 0.22488714754581451,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999641180038452,
+              "min": 0.9999435544013977,
+              "p50": 0.9999650716781616,
+              "p95": 0.9999756217002869,
+              "max": 0.9999792575836182,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.003594008507207036,
+              "min": 0.0026844677049666643,
+              "p50": 0.0035998765379190445,
+              "p95": 0.004262738861143589,
+              "max": 0.004553672857582569,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707595264539123,
+              "min": 0.0003796344972215593,
+              "p50": 0.000544182606972754,
+              "p95": 0.0008043767302297056,
+              "max": 0.0008780474308878183,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52360534667969,
+              "min": -34.20634460449219,
+              "p50": -32.64258575439453,
+              "p95": -30.945405960083008,
+              "max": -30.564821243286133,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 3.96077918726756e-12,
+              "min": 2.285643679530991e-12,
+              "p50": 3.884812176807584e-12,
+              "p95": 5.627541835306893e-12,
+              "max": 6.407442718764367e-12,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.1709465980529785,
+              "min": 1.1034427881240845,
+              "p50": 1.176828145980835,
+              "p95": 1.224722981452942,
+              "max": 1.268155813217163,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.10576445609331131,
+              "min": 0.06812075525522232,
+              "p50": 0.09783731400966644,
+              "p95": 0.15432526171207428,
+              "max": 0.21510636806488037,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        },
+        "16": {
+          "source_count": 170,
+          "codec_joint_correct_count": 159,
+          "requested_edit_count": 16,
+          "realized_edit_count_mean": 16.0,
+          "realized_full_fraction": 1.0,
+          "search_queries_mean": 209.8294117647059,
+          "search_queries_max": 241,
+          "final_audit_queries_per_source": 1,
+          "victim_margin_reduction_mean": 0.6548999547958374,
+          "victim_fool_rate_on_codec_correct": 0.18238993710691823,
+          "evaluator_retention_on_codec_correct": 1.0,
+          "rf_valid_fraction": 1.0,
+          "valid_hard_rate_pooled": 0.18238993710691823,
+          "valid_hard_rate_macro": 0.1954248366013072,
+          "valid_hard_bootstrap_95ci": [
+            0.11949685534591195,
+            0.24528301886792453
+          ],
+          "per_device": {
+            "1": {
+              "eligible": 10,
+              "valid_hard": 3,
+              "valid_hard_rate": 0.3,
+              "evaluator_retention": 1.0
+            },
+            "4": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            },
+            "5": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "6": {
+              "eligible": 8,
+              "valid_hard": 5,
+              "valid_hard_rate": 0.625,
+              "evaluator_retention": 1.0
+            },
+            "7": {
+              "eligible": 9,
+              "valid_hard": 3,
+              "valid_hard_rate": 0.3333333333333333,
+              "evaluator_retention": 1.0
+            },
+            "8": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "10": {
+              "eligible": 9,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.2222222222222222,
+              "evaluator_retention": 1.0
+            },
+            "11": {
+              "eligible": 8,
+              "valid_hard": 3,
+              "valid_hard_rate": 0.375,
+              "evaluator_retention": 1.0
+            },
+            "12": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "15": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "28": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "30": {
+              "eligible": 6,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.3333333333333333,
+              "evaluator_retention": 1.0
+            },
+            "31": {
+              "eligible": 10,
+              "valid_hard": 2,
+              "valid_hard_rate": 0.2,
+              "evaluator_retention": 1.0
+            },
+            "40": {
+              "eligible": 10,
+              "valid_hard": 4,
+              "valid_hard_rate": 0.4,
+              "evaluator_retention": 1.0
+            },
+            "41": {
+              "eligible": 9,
+              "valid_hard": 3,
+              "valid_hard_rate": 0.3333333333333333,
+              "evaluator_retention": 1.0
+            },
+            "43": {
+              "eligible": 10,
+              "valid_hard": 0,
+              "valid_hard_rate": 0.0,
+              "evaluator_retention": 1.0
+            },
+            "46": {
+              "eligible": 10,
+              "valid_hard": 1,
+              "valid_hard_rate": 0.1,
+              "evaluator_retention": 1.0
+            }
+          },
+          "waveform_metrics": {
+            "snr_db": {
+              "mean": 38.76457214355469,
+              "min": 36.672183990478516,
+              "p50": 38.82159423828125,
+              "p95": 40.16809844970703,
+              "max": 40.69215774536133,
+              "finite_fraction": 1.0
+            },
+            "relative_perturbation_power": {
+              "mean": 0.00013532955199480057,
+              "min": 8.526767487637699e-05,
+              "p50": 0.00013117199705448002,
+              "p95": 0.00018011296924669296,
+              "max": 0.0002151698718080297,
+              "finite_fraction": 1.0
+            },
+            "evm_like": {
+              "mean": 0.011580653488636017,
+              "min": 0.00923404935747385,
+              "p50": 0.011453032493591309,
+              "p95": 0.01342057716101408,
+              "max": 0.014668669551610947,
+              "finite_fraction": 1.0
+            },
+            "delta_papr": {
+              "mean": 174.16990661621094,
+              "min": 103.28813934326172,
+              "p50": 169.4898681640625,
+              "p95": 235.38980102539062,
+              "max": 314.9349060058594,
+              "finite_fraction": 1.0
+            },
+            "final_signal_papr": {
+              "mean": 1.7374193668365479,
+              "min": 1.6970539093017578,
+              "p50": 1.7336934804916382,
+              "p95": 1.782948613166809,
+              "max": 1.8812140226364136,
+              "finite_fraction": 1.0
+            },
+            "normalized_peak_delta": {
+              "mean": 0.15171177685260773,
+              "min": 0.11559848487377167,
+              "p50": 0.14897003769874573,
+              "p95": 0.18670785427093506,
+              "max": 0.22544606029987335,
+              "finite_fraction": 1.0
+            },
+            "clipping_fraction": {
+              "mean": 0.0,
+              "min": 0.0,
+              "p50": 0.0,
+              "p95": 0.0,
+              "max": 0.0,
+              "finite_fraction": 1.0
+            },
+            "waveform_correlation": {
+              "mean": 0.9999323487281799,
+              "min": 0.9998924732208252,
+              "p50": 0.9999343156814575,
+              "p95": 0.9999518990516663,
+              "max": 0.9999575018882751,
+              "finite_fraction": 1.0
+            },
+            "psd_l1_distance": {
+              "mean": 0.004954193718731403,
+              "min": 0.003883954370394349,
+              "p50": 0.004976486321538687,
+              "p95": 0.005838681478053331,
+              "max": 0.006429830566048622,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio": {
+              "mean": 0.0005707708187401295,
+              "min": 0.0003796360979322344,
+              "p50": 0.000544190697837621,
+              "p95": 0.0008044032729230821,
+              "max": 0.0008780535426922143,
+              "finite_fraction": 1.0
+            },
+            "observable_oob_energy_ratio_db": {
+              "mean": -32.52351760864258,
+              "min": -34.20632553100586,
+              "p50": -32.64252471923828,
+              "p95": -30.945261001586914,
+              "max": -30.564788818359375,
+              "finite_fraction": 1.0
+            },
+            "delta_oob_energy_ratio": {
+              "mean": 2.0805906910531524e-12,
+              "min": 1.2346415122904686e-12,
+              "p50": 2.076255400246252e-12,
+              "p95": 2.7766948896418286e-12,
+              "max": 3.1964413754748122e-12,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_final_derivative": {
+              "mean": 1.172676920890808,
+              "min": 1.103969931602478,
+              "p50": 1.1764500141143799,
+              "p95": 1.2265751361846924,
+              "max": 1.3041013479232788,
+              "finite_fraction": 1.0
+            },
+            "normalized_max_delta_derivative": {
+              "mean": 0.11765187978744507,
+              "min": 0.08332046866416931,
+              "p50": 0.11310909688472748,
+              "p95": 0.16338205337524414,
+              "max": 0.2326417714357376,
+              "finite_fraction": 1.0
+            },
+            "finite": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p50": 1.0,
+              "p95": 1.0,
+              "max": 1.0,
+              "finite_fraction": 1.0
+            }
+          },
+          "projection_changed_fraction": 0.0
+        }
+      }
+    }
+  },
+  "primary_screening": {
+    "random_uniform_plausible": {
+      "query_key": "q0",
+      "valid_hard_rate": 0.0,
+      "evaluator_retention": 1.0,
+      "rf_valid_fraction": 1.0
+    },
+    "random_nearest": {
+      "query_key": "q0",
+      "valid_hard_rate": 0.0,
+      "evaluator_retention": 1.0,
+      "rf_valid_fraction": 1.0
+    },
+    "random_infill": {
+      "query_key": "q0",
+      "valid_hard_rate": 0.0,
+      "evaluator_retention": 1.0,
+      "rf_valid_fraction": 1.0
+    },
+    "greedy_infill": {
+      "query_key": "q256",
+      "valid_hard_rate": 0.11320754716981132,
+      "evaluator_retention": 1.0,
+      "rf_valid_fraction": 1.0
+    }
+  },
+  "retained_methods": [
+    "greedy_infill",
+    "random_infill",
+    "random_nearest"
+  ],
+  "greedy_minus_best_random_percentage_points": 11.320754716981133,
+  "gate": {
+    "status": "PASS",
+    "reason": "At least three validity-qualified methods are retained for formal paired evaluation."
+  }
+}

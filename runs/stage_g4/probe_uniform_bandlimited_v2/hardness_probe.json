@@ -1,0 +1,240 @@
+{
+  "bandlimit_perturbation": true,
+  "cache_indices": [
+    1892,
+    2027,
+    2071,
+    2157,
+    30234,
+    30463,
+    30308,
+    30274,
+    48451,
+    48257,
+    48476,
+    48580,
+    51801,
+    51626,
+    51987,
+    51955,
+    55001,
+    55175,
+    55105,
+    54756,
+    58281,
+    58009,
+    58291,
+    58064,
+    5755,
+    5443,
+    5654,
+    5475,
+    9059,
+    8785,
+    9217,
+    8765,
+    12793,
+    12797,
+    12531,
+    12700,
+    16305,
+    15922,
+    16137,
+    16361,
+    19527,
+    19910,
+    19810,
+    19896,
+    23242,
+    23075,
+    22911,
+    23325,
+    26346,
+    26432,
+    26821,
+    26559,
+    33947,
+    34006,
+    33792,
+    33802,
+    37583,
+    37623,
+    37478,
+    37378,
+    40980,
+    41092,
+    41071,
+    41418,
+    44706,
+    44894,
+    44697,
+    45046
+  ],
+  "checkpoint": "E:\\exp7\\runs\\stage_g3\\pilot_rfgpt_4k\\best.pt",
+  "examples": 68,
+  "hardness_gate": {
+    "passed": true,
+    "passing_edit_rates": [
+      "0.0010",
+      "0.0015",
+      "0.0020",
+      "0.0030"
+    ],
+    "thresholds": {
+      "min_dual_valid_hard_rate": 0.05,
+      "min_evaluator_identity_retention": 0.95
+    }
+  },
+  "occupied_bandwidth_hz": 22000000.0,
+  "probe_used_classifier_feedback": false,
+  "proposal": "uniform",
+  "results": {
+    "0.0010": {
+      "actual_edit_fraction": 0.0009765625,
+      "dual_valid_hard_examples": 3,
+      "dual_valid_hard_rate": 0.05357142857142857,
+      "edit_count": 2,
+      "evaluator_b": {
+        "edited_accuracy": 1.0,
+        "identity_retention_on_reference_correct": 1.0,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 56,
+      "requested_edit_rate": 0.001,
+      "rf_delta": {
+        "delta_out_of_band_energy_fraction": 7.275557578623193e-08,
+        "finite_fraction": 1.0,
+        "mean_delta_papr": 952.1257934570312,
+        "mean_delta_peak_abs": 1.000861406326294,
+        "mean_delta_snr_db": 28.280536934691977,
+        "mean_nmse": 0.0014857519418001175,
+        "mean_output_papr": 2.0132155418395996,
+        "mean_waveform_correlation": 0.9992571473121643,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        73,
+        1815
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.779411792755127,
+        "fool_rate_on_reference_correct": 0.05357142857142857,
+        "reference_clean_accuracy": 0.8235294222831726
+      }
+    },
+    "0.0015": {
+      "actual_edit_fraction": 0.00146484375,
+      "dual_valid_hard_examples": 3,
+      "dual_valid_hard_rate": 0.05357142857142857,
+      "edit_count": 3,
+      "evaluator_b": {
+        "edited_accuracy": 0.970588207244873,
+        "identity_retention_on_reference_correct": 0.9705882352941176,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 56,
+      "requested_edit_rate": 0.0015,
+      "rf_delta": {
+        "delta_out_of_band_energy_fraction": 1.0260958305252643e-07,
+        "finite_fraction": 1.0,
+        "mean_delta_papr": 751.1526489257812,
+        "mean_delta_peak_abs": 1.064061164855957,
+        "mean_delta_snr_db": 27.047497505667298,
+        "mean_nmse": 0.0019735596142709255,
+        "mean_output_papr": 2.010056734085083,
+        "mean_waveform_correlation": 0.999013364315033,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        730,
+        1176,
+        1420
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.8088235259056091,
+        "fool_rate_on_reference_correct": 0.05357142857142857,
+        "reference_clean_accuracy": 0.8235294222831726
+      }
+    },
+    "0.0020": {
+      "actual_edit_fraction": 0.001953125,
+      "dual_valid_hard_examples": 4,
+      "dual_valid_hard_rate": 0.07142857142857142,
+      "edit_count": 4,
+      "evaluator_b": {
+        "edited_accuracy": 1.0,
+        "identity_retention_on_reference_correct": 1.0,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 56,
+      "requested_edit_rate": 0.002,
+      "rf_delta": {
+        "delta_out_of_band_energy_fraction": 1.2324295539656305e-07,
+        "finite_fraction": 1.0,
+        "mean_delta_papr": 620.7719116210938,
+        "mean_delta_peak_abs": 1.0779772996902466,
+        "mean_delta_snr_db": 26.18355201831531,
+        "mean_nmse": 0.0024079352151602507,
+        "mean_output_papr": 1.9819079637527466,
+        "mean_waveform_correlation": 0.9987961053848267,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        614,
+        934,
+        1258,
+        1599
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.7941176295280457,
+        "fool_rate_on_reference_correct": 0.07142857142857142,
+        "reference_clean_accuracy": 0.8235294222831726
+      }
+    },
+    "0.0030": {
+      "actual_edit_fraction": 0.0029296875,
+      "dual_valid_hard_examples": 7,
+      "dual_valid_hard_rate": 0.125,
+      "edit_count": 6,
+      "evaluator_b": {
+        "edited_accuracy": 0.9852941036224365,
+        "identity_retention_on_reference_correct": 0.9852941176470589,
+        "reference_clean_accuracy": 1.0
+      },
+      "joint_clean_examples": 56,
+      "requested_edit_rate": 0.003,
+      "rf_delta": {
+        "delta_out_of_band_energy_fraction": 1.8397133771941299e-07,
+        "finite_fraction": 1.0,
+        "mean_delta_papr": 482.38958740234375,
+        "mean_delta_peak_abs": 1.1660923957824707,
+        "mean_delta_snr_db": 24.36830093737872,
+        "mean_nmse": 0.003657378489151597,
+        "mean_output_papr": 2.0417797565460205,
+        "mean_waveform_correlation": 0.998171329498291,
+        "output_complex_power_mean": 1.0
+      },
+      "shared_edit_positions": [
+        1541,
+        1549,
+        1582,
+        1728,
+        1855,
+        1898
+      ],
+      "victim_a": {
+        "edited_accuracy": 0.7352941036224365,
+        "fool_rate_on_reference_correct": 0.125,
+        "reference_clean_accuracy": 0.8235294222831726
+      }
+    }
+  },
+  "sample_rate_hz": 35000000.0,
+  "samples_per_device": 4,
+  "seconds": 0.7579345703125,
+  "split": "reward_validation",
+  "status": "complete",
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "training_used_classifier_feedback": false
+}
